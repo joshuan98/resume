@@ -278,7 +278,7 @@ h2 {
     justify-content: center;
 
     position: relative;
-    padding-bottom: 70px;
+    padding: 0px 10px 70px 10px;
 }
 
 .projects-right {
@@ -290,7 +290,7 @@ h2 {
     background-color: var(--secondary_accent);
 
     position: relative;
-    padding-bottom: 70px;
+    padding: 0px 10px 70px 10px;
 }
 
 .projects-links-container {
