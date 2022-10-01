@@ -1,0 +1,47 @@
+:root {
+    --primary: black;
+    --secondary: white;
+    --accent: lime;
+    --large: 50px;
+    --medium: 30px;
+    --small: 20px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    background-color: var(--primary);
+}
+
+.navbar-link-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style: none;
+}
+
+.navbar-link {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 20px;
+    font-size: var(--medium);
+}
