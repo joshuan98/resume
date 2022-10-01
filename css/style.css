@@ -27,6 +27,7 @@ body {
     height: auto;
     background-color: var(--primary);
     padding: 3px;
+    z-index: 999;
 }
 
 .navbar-link-list {
