@@ -288,3 +288,73 @@ h2 {
     flex: 1;
     padding: 10px;
 }
+
+/* Container for skill bars */
+.skill-bar {
+    width: 100%;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+
+    display: flex;
+    margin: 5px;
+}
+
+.proficient-text {
+    padding: 10px 30px 10px 20px;
+    width: 100px;
+    text-align: left;
+
+    background-color: #05DC8D;
+}
+
+.proficient-bar {
+    text-align: right;
+    /* Right-align text */
+    padding: 10px 10px 10px 0;
+    color: white;
+    /* White text color */
+
+    width: 80%;
+    background-color: #04AA6D;
+}
+
+.intermediate-text {
+    padding: 10px 30px 10px 20px;
+    width: 100px;
+    text-align: left;
+
+    background-color: #2196F3;
+}
+
+
+.intermediate-bar {
+    text-align: right;
+    /* Right-align text */
+    padding: 10px 10px 10px 0;
+    color: white;
+    /* White text color */
+
+    width: 50%;
+    background-color: #0C7CD5;
+}
+
+.basic-text {
+    padding: 10px 30px 10px 20px;
+    width: 100px;
+    text-align: left;
+
+    background-color: #f44336;
+}
+
+
+.basic-bar {
+    text-align: right;
+    /* Right-align text */
+    padding: 10px 10px 10px 0;
+    color: white;
+    /* White text color */
+
+    width: 25%;
+    background-color: #EA1C0D;
+}
