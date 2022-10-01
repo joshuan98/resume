@@ -6,7 +6,6 @@
     --large: 50px;
     --medium: 30px;
     --small: 20px;
-
 }
 
 html {
@@ -24,6 +23,8 @@ body {
     /* change the default display type to inline-block */
     overflow: visible;
     /* hide the overflow */
+
+
 }
 
 .navbar {
@@ -91,6 +92,9 @@ h2 {
 
 .sections {
     margin: 0;
+
+    font-size: var(--small);
+    font-size: 1vw;
 }
 
 .section-1 {
@@ -276,8 +280,6 @@ h2 {
 
     position: relative;
     padding-bottom: 70px;
-
-    font-size: 16px;
 }
 
 .projects-right {
@@ -290,8 +292,6 @@ h2 {
 
     position: relative;
     padding-bottom: 70px;
-
-    font-size: 16px;
 }
 
 .projects-links-container {
