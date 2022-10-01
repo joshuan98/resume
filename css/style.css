@@ -93,7 +93,8 @@ h2 {
 .sections {
     margin: 0;
 
-    font-size: var(--small);
+    font-size: var(--medium);
+    font-size: 1vw;
 }
 
 .section-1 {
