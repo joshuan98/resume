@@ -24,8 +24,10 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     background-color: var(--primary);
     padding: 3px;
@@ -249,11 +251,15 @@ h2 {
     padding: 10px;
 }
 
+.projects-container {
+    width: auto;
+}
+
 .projects-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 40px;
+    margin: 20px;
 }
 
 .projects-left {
@@ -262,7 +268,6 @@ h2 {
     margin-right: 20px;
     border: 2px solid var(--primary_accent);
     border-radius: 10px;
-    padding: 10px 10px 50px 10px;
     background-color: var(--secondary_accent);
     justify-content: center;
 
@@ -275,7 +280,6 @@ h2 {
     margin-right: 150px;
     border: 2px solid var(--primary_accent);
     border-radius: 10px;
-    padding: 10px 10px 50px 10px;
     background-color: var(--secondary_accent);
 
     position: relative;
@@ -301,15 +305,11 @@ h2 {
 
 .projects-links-left {
     flex: 1;
-
     color: var(--primary_accent);
-
-
 }
 
 .projects-links-right {
     flex: 1;
-
     color: var(--primary_accent);
 }
 
