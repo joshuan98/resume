@@ -19,15 +19,16 @@ body {
     background-color: var(--primary);
     margin: 0;
     padding: 0;
+
+    display: inline-block;
+    /* change the default display type to inline-block */
+    overflow: visible;
+    /* hide the overflow */
 }
 
 .navbar {
     position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
     height: auto;
     background-color: var(--primary);
     padding: 3px;
@@ -272,6 +273,7 @@ h2 {
     justify-content: center;
 
     position: relative;
+    padding-bottom: 80px;
 }
 
 .projects-right {
@@ -283,6 +285,7 @@ h2 {
     background-color: var(--secondary_accent);
 
     position: relative;
+    padding-bottom: 80px;
 }
 
 .projects-links-container {
