@@ -298,10 +298,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
 
-    background-color: var(--primary);
-
     text-align: center;
-    border-radius: 6px;
 
     position: absolute;
     bottom: 0;
@@ -313,12 +310,20 @@ h2 {
 
 .projects-links-left {
     flex: 1;
+    background-color: var(--primary);
     color: var(--primary_accent);
+    margin: 5px;
+    
+    border-radius: 20px;
 }
 
 .projects-links-right {
     flex: 1;
+    background-color: var(--primary);
     color: var(--primary_accent);
+    margin: 5px;
+    
+    border-radius: 20px;
 }
 
 /* Container for skill bars */
