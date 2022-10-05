@@ -90,6 +90,15 @@ h2 {
     padding: 10px;
 }
 
+.source-code-link {
+    margin: 0;
+    font-size: var(--small);
+    justify-self: auto;
+    padding: 10px;
+    color: var(--primary_accent);
+    font-size: 16px;
+}
+
 .sections {
     margin: 0;
 
