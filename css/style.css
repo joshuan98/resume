@@ -2,7 +2,7 @@
     --primary: black;
     --secondary: white;
     --primary_accent: lime;
-    --secondary_accent: #D3D3D3;
+    --secondary_accent: #EDEDED;
     --large: 50px;
     --medium: 30px;
     --small: 20px;
@@ -123,6 +123,12 @@ h2 {
 .about-right {
     flex: 1;
     padding: var(--small);
+    text-align: center;
+}
+
+.profile-photo {
+    max-height: 300px;
+    max-width: 300px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -231,8 +237,6 @@ h2 {
     background-color: var(--secondary_accent);
     position: relative;
     border-radius: 6px;
-
-
 }
 
 .timeline-header {
@@ -313,7 +317,7 @@ h2 {
     background-color: var(--primary);
     color: var(--primary_accent);
     margin: 5px;
-    
+
     border-radius: 20px;
 }
 
@@ -322,7 +326,7 @@ h2 {
     background-color: var(--primary);
     color: var(--primary_accent);
     margin: 5px;
-    
+
     border-radius: 20px;
 }
 
