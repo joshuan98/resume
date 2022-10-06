@@ -23,8 +23,17 @@ body {
     /* change the default display type to inline-block */
     overflow: visible;
     /* hide the overflow */
+}
 
+h1 {
+    color: var(--secondary);
+    font-size: var(--large);
+    margin: 0;
+}
 
+h2 {
+    border-top: 10px solid var(--primary_accent);
+    width: 180px;
 }
 
 .navbar {
@@ -52,17 +61,6 @@ body {
     text-decoration: none;
     padding: var(--medium);
     font-size: var(--medium);
-}
-
-h1 {
-    color: var(--secondary);
-    font-size: var(--large);
-    margin: 0;
-}
-
-h2 {
-    border-top: 10px solid var(--primary_accent);
-    width: 180px;
 }
 
 .title-container {
@@ -112,10 +110,10 @@ h2 {
 .source-code-link {
     margin: 0;
     font-size: var(--small);
-    justify-self: auto;
+    justify-self: center;
     padding: 10px;
     color: var(--primary_accent);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .sections {
