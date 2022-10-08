@@ -59,7 +59,8 @@ h2 {
 .navbar-link {
     color: var(--primary_accent);
     text-decoration: none;
-    padding: var(--medium);
+    padding: 0 var(--medium) 0 var(--medium);
+    border-radius: 10px;
     font-size: var(--medium);
 }
 
@@ -294,7 +295,6 @@ h2 {
 
 .projects-container {
     width: auto;
-    max-width: 1200px;
 }
 
 .projects-row {
@@ -304,6 +304,8 @@ h2 {
     flex-direction: row;
     justify-content: center;
     margin: 20px;
+
+    min-width: 1200px;
 }
 
 .projects-left {
