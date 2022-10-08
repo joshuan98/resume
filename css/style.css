@@ -63,6 +63,13 @@ h2 {
     font-size: var(--medium);
 }
 
+.navbar-link:hover {
+    background: var(--secondary_accent);
+    color: var(--primary);
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+}
+
 .title-container {
     justify-content: center;
     display: flex;
