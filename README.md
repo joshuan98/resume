@@ -2,4 +2,4 @@
 
 ## Setup
 
-Run `start index.html` to test locally
+Run `http-server src` to test locally
