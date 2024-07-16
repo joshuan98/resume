@@ -2,4 +2,4 @@
 
 ## Setup
 
-Run `http-server src` to test locally
+Run `live-server src` to test locally
