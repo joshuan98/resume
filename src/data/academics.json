@@ -1,0 +1,54 @@
+{
+  "title": "Academics",
+  "content": [
+    {
+      "dateRange": "Aug 2021 - Present",
+      "institution": "National University of Singapore",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Bachelor of Engineering, Computer Engineering",
+        "Expected Date of Graduation: Dec 2024",
+        "Cumulative Average Point: 4.86 / 5.0",
+        {
+          "title": "Course Work:",
+          "description": [
+            "Programming Methodology (A+)",
+            "Data Structures and Algorithms (A)",
+            "Software Engineering & Object-Oriented Programming (A-)",
+            "Introduction to Artificial Intelligence (A+)",
+            "Introduction to Machine Learning (A)"
+          ]
+        },
+        "NUS Overseas Colleges (NOC) New York, Batch 19",
+        "Top 5% of Academic Year 2023/2024 Cohort (Deans' List)"
+      ]
+    },
+    {
+      "dateRange": "Jan 2013 - Dec 2018",
+      "institution": "Raffles Institution",
+      "image": {
+        "src": "/assets/raffles_institution.png",
+        "alt": "Raffles Institution"
+      },
+      "description": [
+        "Integrated Programme",
+        "GCE A-Levels, Rank Points: 87.5 / 90",
+        {
+          "title": "Course Work:",
+          "description": [
+            "Higher 1 General Paper (B)",
+            "Higher 1 Chemistry (A)",
+            "Higher 2 Physics (A)",
+            "Higher 2 Economics (A)",
+            "Higher 2 Mathematics (A)",
+            "Higher 3 SMU Game Theory (Merit)",
+            "Higher 1 Project Work (B)"
+          ]
+        }
+      ]
+    }
+  ]
+}

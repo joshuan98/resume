@@ -1,0 +1,74 @@
+{
+  "title": "Projects & Hackathons",
+  "content": [
+    {
+      "title": "Quantitative Finance – QuantEdge Summer Insights Program",
+      "image": {
+        "src": "/assets/quantedge.png",
+        "alt": "QuantEdge"
+      },
+      "description": [
+        "Learned financial management, investment strategies, and asset allocation from senior management and analysts, and extended externship to complete a technical project in portfolio management."
+      ],
+      "links": []
+    },
+    {
+      "title": "Blockchain - ArcAid",
+      "image": {
+        "src": "/assets/pennapps.png",
+        "alt": "PennApps"
+      },
+      "description": [
+        "Awarded Best Education Hack at PennApps XXIV hosted by University of Pennsylvania, ranking among the top 8 teams out of 354 participants.",
+        "Streamlined the student aid application process with Aleo's zk-SNARKs, implemented 2FA with USB and SHA256 encryption, using Next.js and managed the database with Prisma ORM and PlanetScale."
+      ],
+      "links": [
+        {
+          "label": "Devpost",
+          "url": "https://devpost.com/software/draft-placeholder"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/juliussneezer04/arcaid"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence - TravelGPT",
+      "image": {
+        "src": "/assets/hawkhack.png",
+        "alt": "HawkHack"
+      },
+      "description": [
+        "Won 1st Place Best Solo Hack in HawkHack 2023 organized by Montclair State University.",
+        "Developed customizable travel itineraries using OpenAI models and integrated MapBox for an interactive map feature."
+      ],
+      "links": [
+        {
+          "label": "Devpost",
+          "url": "https://devpost.com/software/travelgpt"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/joshuan98/hawkhack"
+        }
+      ]
+    },
+    {
+      "title": "Telegram Bot - Study Buddy",
+      "image": {
+        "src": "/assets/study_buddy.jpg",
+        "alt": "Study Buddy"
+      },
+      "description": [
+        "Led the development and deployment of a Telegram Bot for student study groups using Python and MongoDB on Heroku, reaching 80 Engineering students with 29 active users in a pilot program."
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/study-buddy-developers/study-buddy"
+        }
+      ]
+    }
+  ]
+}

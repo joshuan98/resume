@@ -1,0 +1,66 @@
+{
+  "title": "Work Experience",
+  "content": [
+    {
+      "dateRange": "Aug 2024 – Present",
+      "position": "Aggregate Asset Management, Research Analyst (Singapore)",
+      "image": {
+        "src": "/assets/aggregate.png",
+        "alt": "Aggregate Asset Management"
+      },
+      "description": [
+        "Conducted in-depth research and development of multiple trading strategies, analyzing market trends, backtesting models, and optimizing strategies for risk management and profitability."
+      ]
+    },
+    {
+      "dateRange": "Aug 2022 – Present",
+      "position": "National University of Singapore, Teaching Assistant (Singapore)",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Conducted tutorials for over 60 students across multiple modules, including Data Structures and Algorithms, Software Engineering & Object-Oriented Programming, and Introduction to Machine Learning; responsibilities included designing course materials, creating and presenting tutorial content, and weekly consultation services.",
+        "Mentored 24 student teams across 2 iterations of self-directed software development projects, specializing in Unity game development, Telegram bot creation, and web application development, resulting in 17 teams achieving Apollo 11 (Advanced) level and 7 teams attaining Gemini (Intermediate) level."
+      ]
+    },
+    {
+      "dateRange": "May 2024 – Aug 2024",
+      "position": "ST Engineering, Software Engineer (Singapore)",
+      "image": {
+        "src": "/assets/st_engineering.png",
+        "alt": "ST Engineering"
+      },
+      "description": [
+        "Developed and maintained 11 XR applications in Swift and VisionOS for Apple Vision Pro, such as user authentication, interactive scenes, and remote monitoring.",
+        "Unified various application capabilities into a cohesive solution, providing strategic insights and enhancing the company’s readiness for leveraging Apple Vision Pro in future projects."
+      ]
+    },
+    {
+      "dateRange": "Dec 2022 – Dec 2023",
+      "position": "InTune Auto, Software Engineer (New York)",
+      "image": {
+        "src": "/assets/intune.png",
+        "alt": "InTune Auto"
+      },
+      "description": [
+        "Engineered and deployed 9 major projects, including digital authorization, automated reminders, appointment scheduling, Twilio SMS/Gmail integration, EC2 image attachments, and OpenAI utilization.",
+        "Revamped testing infrastructure, fixing over 50% of broken Cypress frontend tests and achieving over 90% coverage of backend endpoints with JUnit tests.",
+        "Leveraged technologies like Heroku, Netlify, DataDog, AWS (ECR, ECS), and Docker, and coded in TypeScript, React, Jersey, jOOQ, and PostgreSQL."
+      ]
+    },
+    {
+      "dateRange": "Sep 2022 – Jan 2023",
+      "position": "Solutions16, Software Engineer (Singapore)",
+      "image": {
+        "src": "/assets/solutions16.png",
+        "alt": "Solutions16"
+      },
+      "description": [
+        "Devised an end-to-end monitoring system using MosquittoMQTT, DigitalOcean, LilyGO SIM7600, and ESP32, integrated with Blynk and MongoDB to collect over 200,000 data points.",
+        "Implemented just-in-time alerts for WhatsApp and Telegram via Meta for Developers and BotFather, successfully averting 2 instances of severe property damage from pump room leaks.",
+        "Automated email notifications using the Blynk IoT platform, eliminating manual 8-hour updates."
+      ]
+    }
+  ]
+}
