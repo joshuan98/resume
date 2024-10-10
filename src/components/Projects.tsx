@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
           return (
             <div
               key={index}
-              className={`border-2 border-accent p-6 rounded-lg ${colSpanClass}`}
+              className={`border-2 border-accent p-6 rounded-lg flex flex-col ${colSpanClass}`}
             >
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <Image
@@ -26,13 +26,13 @@ const Projects: React.FC = () => {
                 className="mx-auto object-contain mb-4 w-full md:w-auto"
                 style={{ width: '150px', height: '150px' }}
               />
-              <ul className="list-disc list-inside mb-4">
+              <ul className="list-disc list-inside mb-4 flex-grow">
                 {item.description.map((subItem, subIndex) => (
                   <li key={subIndex}>{subItem}</li>
                 ))}
               </ul>
               {item.links && item.links.length > 0 && (
-                <div className="flex justify-center space-x-4">
+                <div className="mt-auto flex justify-center space-x-4">
                   {item.links.map((link, subIndex) => (
                     <a
                       key={subIndex}

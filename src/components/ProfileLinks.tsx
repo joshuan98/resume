@@ -7,7 +7,7 @@ const ProfileLinks: React.FC = () => {
       <a href="https://www.linkedin.com/in/joshua-nee/" target="_blank" rel="noopener noreferrer">
         <Image src="/assets/linkedin.png" alt="LinkedIn Profile" width={50} height={50} className="hover:opacity-75 transition" style={{ width: '50px', height: '50px' }} />
       </a>
-      <a href="/assets/resume.pdf" download className="bg-lime-500 text-black px-4 py-2 rounded hover:bg-secondary hover:text-primary transition">
+      <a href="/assets/resume.pdf" download className="bg-lime-500 text-black px-4 py-2 rounded hover:bg-secondary hover:text-primary transition flex items-center justify-center">
         Download Resume
       </a>
       <a href="https://github.com/joshuan98" target="_blank" rel="noopener noreferrer">
