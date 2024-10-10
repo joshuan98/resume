@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-// Adjust the import path based on your file structure
 import aboutData from '../data/about.json';
 
 const About: React.FC = () => {
@@ -28,9 +27,10 @@ const About: React.FC = () => {
           <Image
             src="/assets/photo.jpeg"
             alt="Profile Photo"
-            width={300}
-            height={300}
-            className="mx-auto object-contain"
+            width={500}
+            height={500}
+            className="mx-auto object-contain w-full md:w-auto"
+            style={{ width: '500px', height: '500px' }}
           />
         </div>
       </div>

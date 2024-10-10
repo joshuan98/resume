@@ -23,7 +23,8 @@ const Projects: React.FC = () => {
                 alt={item.image.alt}
                 width={150}
                 height={150}
-                className="mx-auto object-contain mb-4"
+                className="mx-auto object-contain mb-4 w-full md:w-auto"
+                style={{ width: '150px', height: '150px' }}
               />
               <ul className="list-disc list-inside mb-4">
                 {item.description.map((subItem, subIndex) => (
