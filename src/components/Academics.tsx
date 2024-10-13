@@ -12,11 +12,11 @@ const Academics: React.FC = () => {
 
         {/* Timeline Entries */}
         {academicsData.content.map((item, index) => {
-          const isRightAligned = index % 2 === 0; // Alternate sides
+          const isLeftAligned = index % 2 === 1; // Alternate sides
           return (
             <div
               key={index}
-              className={`mb-8 flex flex-col md:flex-row justify-between items-center w-full ${!isRightAligned ? 'md:flex-row-reverse' : ''
+              className={`mb-8 flex flex-col md:flex-row justify-between items-center w-full ${!isLeftAligned ? 'md:flex-row-reverse' : ''
                 }`}
             >
               <div className="order-1 w-full md:w-5/12"></div>

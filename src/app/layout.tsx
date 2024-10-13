@@ -16,7 +16,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Joshua Nee - Software Engineer",
-  description: "Resume portfolio website of Joshua Nee",
+  description: "Resume portfolio of Joshua Nee",
+  keywords: "Joshua Nee, Joshua Nee Ting Feng, Joshua, Nee, Nee Ting Feng, Joshua Ting Feng, Software Engineer, Resume, Portfolio, Full Stack Developer, Frontend Developer, Backend Developer",
 };
 
 export default function RootLayout({
