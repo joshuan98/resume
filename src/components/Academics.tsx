@@ -4,7 +4,7 @@ import academicsData from '../data/academics.json';
 
 const Academics: React.FC = () => {
   return (
-    <section id="academics" className="bg-primary text-secondary py-8 px-4 md:py-16 md:px-8">
+    <section id="academics" className="bg-primary text-secondary py-16 px-8">
       <h2 className="text-3xl font-bold mb-8">{academicsData.title}</h2>
       <div className="relative max-w-5xl mx-auto">
         {/* Vertical timeline line */}
