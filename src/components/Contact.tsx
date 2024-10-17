@@ -11,7 +11,9 @@ const Contact: React.FC = () => {
       </h2>
       <div className="max-w-3xl mx-auto text-center">
         <h3 className="text-xl font-semibold mb-4">Feel free to reach out to me!</h3>
-        <p className="mb-6">joshuanee@u.nus.edu</p>
+        <a href="mailto:joshuanee@u.nus.edu" className="text-lg font-medium text-accent mb-6 block transition hover:underline">
+          joshuanee@u.nus.edu
+        </a>
         <ProfileLinks />
       </div>
     </section>
