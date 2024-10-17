@@ -21,8 +21,8 @@ Joshua Nee's personal portfolio website to showcase experience, projects, and sk
 
 ## 📂 **Project Structure**
 
-- **`/public`**: Static assets, including resume
-- **`/src/containers`**: Components like the "About" section to personalize
+- **`/public/assets`**: Static assets, including resume
+- **`/src/components`**: Components like the "About" section to personalize
 - **`/src/styles`**: Modify the global theme and CSS settings
 
 ## ⚙️ **Setup Instructions**
