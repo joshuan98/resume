@@ -26,7 +26,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinishLoading }) => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
-      className="fixed inset-0 flex items-center justify-center bg-black text-white font-bold px-4"
+      className="fixed inset-0 flex items-center justify-center bg-black text-white font-bold z-50"
     >
       <div className="text-center">
         <h1 className="text-4xl md:text-6xl sm:text-3xl leading-snug">

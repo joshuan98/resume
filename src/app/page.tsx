@@ -21,9 +21,8 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      {isLoading ? (
-        <LoadingScreen onFinishLoading={handleLoadingComplete} />
-      ) : (
+      <div className={`relative ${isLoading ? 'overflow-hidden' : ''}`}>
+        {isLoading && <LoadingScreen onFinishLoading={handleLoadingComplete} />}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -40,7 +39,7 @@ const HomePage: React.FC = () => {
             <Contact />
           </div>
         </motion.div>
-      )}
+      </div>
     </>
   );
 };
