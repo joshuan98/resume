@@ -15,6 +15,7 @@ const ProfileLinks: React.FC = () => {
           alt="LinkedIn Profile"
           width={48}
           height={48}
+          priority
           className="object-contain hover:opacity-75 transition"
         />
       </a>
@@ -38,6 +39,7 @@ const ProfileLinks: React.FC = () => {
           alt="GitHub Profile"
           width={48}
           height={48}
+          priority
           className="object-contain hover:opacity-75 transition"
         />
       </a>

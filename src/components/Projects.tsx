@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import projectsData from '../data/projects.json';
+import { motion } from 'framer-motion';
 
 const Projects: React.FC = () => {
   return (
@@ -12,10 +15,39 @@ const Projects: React.FC = () => {
         {projectsData.content.map((item, index) => {
           const colSpanClass = index === 0 || index === 3 ? 'col-span-1 md:col-span-2' : '';
 
+          // Define animation variants based on the item's position
+          let animationVariants;
+          if (index === 0) {
+            animationVariants = {
+              hidden: { opacity: 0, y: -100 },
+              visible: { opacity: 1, y: 0 },
+            };
+          } else if (index === 1) {
+            animationVariants = {
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            };
+          } else if (index === 2) {
+            animationVariants = {
+              hidden: { opacity: 0, x: 100 },
+              visible: { opacity: 1, x: 0 },
+            };
+          } else if (index === 3) {
+            animationVariants = {
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0 },
+            };
+          }
+
           return (
-            <div
+            <motion.div
               key={index}
               className={`border-2 border-accent p-6 rounded-lg flex flex-col ${colSpanClass}`}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.8, ease: 'easeInOut' }}
+              variants={animationVariants}
             >
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <Image
@@ -44,7 +76,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               )}
-            </div>
+            </motion.div>
           );
         })}
       </div>
