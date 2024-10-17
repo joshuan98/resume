@@ -30,7 +30,7 @@ const About: React.FC = () => {
             width={500}
             height={500}
             className="mx-auto object-contain w-full md:w-auto"
-            style={{ width: '500px', height: '500px' }}
+            style={{ width: 'auto', height: 'auto' }}
           />
         </div>
       </div>

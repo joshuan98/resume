@@ -35,7 +35,8 @@ const Navbar: React.FC = () => {
             <a
               href={`#${section.toLowerCase()}`}
               onClick={closeMenu}
-              className="text-lg sm:text-xl text-accent no-underline px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-secondary hover:text-primary"
+              className="text-lg sm:text-xl text-accent no-underline px-4 py-2 rounded transition-transform duration-300 ease-in-out hover:bg-secondary hover:text-primary hover:scale-110"
+              style={{ display: 'inline-block' }}
             >
               {section}
             </a>

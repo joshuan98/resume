@@ -13,9 +13,9 @@ const ProfileLinks: React.FC = () => {
         <Image
           src="/assets/linkedin.png"
           alt="LinkedIn Profile"
-          layout="fill"
-          objectFit="contain"
-          className="hover:opacity-75 transition"
+          width={48}
+          height={48}
+          className="object-contain hover:opacity-75 transition"
         />
       </a>
 
@@ -36,9 +36,9 @@ const ProfileLinks: React.FC = () => {
         <Image
           src="/assets/github.png"
           alt="GitHub Profile"
-          layout="fill"
-          objectFit="contain"
-          className="hover:opacity-75 transition"
+          width={48}
+          height={48}
+          className="object-contain hover:opacity-75 transition"
         />
       </a>
     </div>
