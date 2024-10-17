@@ -14,7 +14,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinishLoading }) => {
     const timer = setTimeout(() => {
       setIsVisible(false);
       onFinishLoading();
-    }, 1500);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [onFinishLoading]);
@@ -25,7 +25,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinishLoading }) => {
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 2 }}
       className="fixed inset-0 flex items-center justify-center bg-black text-white font-bold z-50"
     >
       <div className="text-center">
