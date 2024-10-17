@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1000);
+    const timer = setTimeout(() => setIsLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -25,7 +25,7 @@ const HomePage: React.FC = () => {
         <motion.div
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
           className="fixed inset-0 flex items-center justify-center bg-black text-white text-4xl font-bold"
         >
           Welcome to my website
@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
         >
           <Navbar />
           <div className="sections">
