@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import skillsData from '../data/skills.json';
+import { motion } from 'framer-motion';
 
 const getSkillLevelColor = (level: string) => {
   switch (level) {
@@ -45,7 +48,13 @@ const Skills: React.FC = () => {
                 {item.name}
               </div>
               <div className="flex-1 ml-4 bg-gray-300 rounded-full h-4">
-                <div className={`${bgBar} h-4 rounded-full`} style={{ width }}></div>
+                <motion.div
+                  className={`${bgBar} h-4 rounded-full`}
+                  initial={{ width: '0%' }}
+                  whileInView={{ width }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 1, ease: 'easeInOut' }}
+                />
               </div>
             </div>
           );
