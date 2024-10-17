@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import workData from '../data/work.json';
+import { motion } from 'framer-motion';
 
 const Work: React.FC = () => {
   return (
@@ -12,7 +15,20 @@ const Work: React.FC = () => {
 
         {/* Timeline Entries */}
         {workData.content.map((item, index) => {
-          const isLeftAligned = index % 2 === 1; // Alternate sides
+          const isLeftAligned = index % 2 === 1;
+
+          // Define animation variants for content
+          const contentVariants = {
+            hidden: { opacity: 0, x: isLeftAligned ? -100 : 100 },
+            visible: { opacity: 1, x: 0 },
+          };
+
+          // Define animation variants for the marker
+          const markerVariants = {
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          };
+
           return (
             <div
               key={index}
@@ -20,9 +36,26 @@ const Work: React.FC = () => {
                 }`}
             >
               <div className="order-1 w-full md:w-5/12"></div>
+
               {/* Marker */}
-              <div className="z-20 flex items-center justify-center order-2 w-8 h-8 rounded-full border-4 border-accent bg-white"></div>
-              <div className="order-3 w-full md:w-5/12 bg-secondary text-primary p-4 md:p-6 rounded-lg shadow-lg">
+              <motion.div
+                className="z-20 flex items-center justify-center order-2 w-8 h-8 rounded-full border-4 border-accent bg-white"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.6, ease: 'easeInOut' }}
+                variants={markerVariants}
+              ></motion.div>
+
+              {/* Timeline Content */}
+              <motion.div
+                className="order-3 w-full md:w-5/12 bg-secondary text-primary p-4 md:p-6 rounded-lg shadow-lg"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.8, ease: 'easeInOut' }}
+                variants={contentVariants}
+              >
                 <h3 className="text-xl font-semibold">{item.dateRange}</h3>
                 <p className="italic mb-2">{item.position}</p>
                 <Image
@@ -38,7 +71,7 @@ const Work: React.FC = () => {
                     <li key={subIndex}>{subItem}</li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             </div>
           );
         })}
