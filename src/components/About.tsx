@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <div className="flex flex-col md:flex-row justify-center items-center">
         <div className="md:w-1/2 p-4">
           {aboutData.description.map((item, index) => (
-            <p key={index} className="mb-4">
+            <p key={index} className="mb-4" style={{ textAlign: 'justify' }}>
               {item}
             </p>
           ))}
@@ -34,7 +34,7 @@ const About: React.FC = () => {
           />
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

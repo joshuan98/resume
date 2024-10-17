@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
               />
               <ul className="list-disc list-inside mb-4 flex-grow">
                 {item.description.map((subItem, subIndex) => (
-                  <li key={subIndex}>{subItem}</li>
+                  <li key={subIndex} style={{ textAlign: 'justify' }}>{subItem}</li>
                 ))}
               </ul>
               {item.links && item.links.length > 0 && (

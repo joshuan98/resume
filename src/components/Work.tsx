@@ -68,7 +68,7 @@ const Work: React.FC = () => {
                 />
                 <ul className="list-disc list-inside">
                   {item.description.map((subItem, subIndex) => (
-                    <li key={subIndex}>{subItem}</li>
+                    <li key={subIndex} style={{ textAlign: 'justify' }}>{subItem}</li>
                   ))}
                 </ul>
               </motion.div>

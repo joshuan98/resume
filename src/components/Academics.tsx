@@ -69,18 +69,18 @@ const Academics: React.FC = () => {
                 <ul className="list-disc list-inside">
                   {item.description.map((subItem, subIndex) => {
                     if (typeof subItem === 'string') {
-                      return <li key={subIndex}>{subItem}</li>;
+                      return <li key={subIndex} style={{ textAlign: 'justify' }}>{subItem}</li>;
                     } else if (
                       typeof subItem === 'object' &&
                       subItem.title &&
                       subItem.description
                     ) {
                       return (
-                        <li key={subIndex}>
+                        <li key={subIndex} style={{ textAlign: 'justify' }}>
                           {subItem.title}
                           <ul className="list-disc list-inside ml-4">
                             {subItem.description.map((d, idx) => (
-                              <li key={idx}>{d}</li>
+                              <li key={idx} style={{ textAlign: 'justify' }}>{d}</li>
                             ))}
                           </ul>
                         </li>
