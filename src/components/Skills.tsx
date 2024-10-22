@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
           const { bgText, bgBar, width } = getSkillLevelColor(item.level);
           return (
             <div key={index} className="flex items-center">
-              <div className={`w-32 text-sm font-medium text-center text-secondary p-2 rounded ${bgText}`}>
+              <div className={`w-32 text-sm font-medium text-center text-primary p-2 rounded ${bgText}`}>
                 {item.name}
               </div>
               <div className="flex-1 ml-4 bg-gray-300 rounded-full h-4">
