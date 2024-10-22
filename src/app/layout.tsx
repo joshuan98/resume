@@ -1,20 +1,14 @@
 import React from 'react';
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import '../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Ubuntu_Mono } from 'next/font/google'
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const ubuntu_mono = Ubuntu_Mono({
+  weight: '400',
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: "Joshua Nee - Software Engineer",
@@ -34,7 +28,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono bg-black text-white`}
+        className={`${ubuntu_mono.className} antialiased bg-black text-white`}
       >
         {children}
         <Analytics />
