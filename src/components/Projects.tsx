@@ -1,9 +1,9 @@
 'use client';
 
-import React from 'react';
-import Image from 'next/image';
-import projectsData from '../data/projects.json';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import React from 'react';
+import projectsData from '../data/projects.json';
 
 const Projects: React.FC = () => {
   return (

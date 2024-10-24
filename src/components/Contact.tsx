@@ -1,8 +1,8 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import React from 'react';
 import ProfileLinks from './ProfileLinks';
-import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
   const popEffect = {

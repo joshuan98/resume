@@ -1,9 +1,9 @@
-import React from 'react';
-import type { Metadata } from "next";
-import '../styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Ubuntu_Mono } from 'next/font/google'
+import type { Metadata } from "next";
+import { Ubuntu_Mono } from 'next/font/google';
+import React from 'react';
+import '../styles/globals.css';
 
 const ubuntu_mono = Ubuntu_Mono({
   weight: '400',

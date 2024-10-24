@@ -1,9 +1,9 @@
 'use client';
 
-import React from 'react';
-import Image from 'next/image';
-import academicsData from '../data/academics.json';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import React from 'react';
+import academicsData from '../data/academics.json';
 
 const Academics: React.FC = () => {
   return (

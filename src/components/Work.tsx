@@ -1,9 +1,9 @@
 'use client';
 
-import React from 'react';
-import Image from 'next/image';
-import workData from '../data/work.json';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import React from 'react';
+import workData from '../data/work.json';
 
 const Work: React.FC = () => {
   return (
