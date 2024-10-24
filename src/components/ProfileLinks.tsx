@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 
 const ProfileLinks: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const ProfileLinks: React.FC = () => {
       </a>
 
       <a
-        href="/assets/resume.pdf"
+        href="/assets/Joshua Nee Ting Feng Resume.pdf"
         download
         className="bg-lime-500 text-black sm:text-lg text-sm px-4 py-2 rounded hover:bg-secondary hover:text-primary transition flex items-center justify-center"
       >

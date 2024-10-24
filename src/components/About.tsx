@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 import aboutData from '../data/about.json';
 
 const About: React.FC = () => {
@@ -16,7 +16,7 @@ const About: React.FC = () => {
             </p>
           ))}
           <a
-            href="/assets/resume.pdf"
+            href="/assets/Joshua Nee Ting Feng Resume.pdf"
             download
             className="inline-block bg-accent text-primary px-4 py-2 rounded hover:bg-primary hover:text-secondary transition"
           >
