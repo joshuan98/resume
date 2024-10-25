@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-0 bg-primary py-3 z-50">
+    <nav className="sticky top-0 bg-primary py-4 z-50">
       <div className="flex justify-between items-center px-4 sm:px-8">
         <button
           className="sm:hidden text-accent focus:outline-none"
