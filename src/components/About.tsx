@@ -4,7 +4,7 @@ import aboutData from '../data/about.json';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="bg-secondary text-primary py-16 px-8">
+    <section id="about" className="bg-primary text-secondary dark:bg-secondary dark:text-primary py-16 px-8">
       <h2 className="text-3xl font-bold mb-8">
         {aboutData.title}
       </h2>
@@ -18,7 +18,7 @@ const About: React.FC = () => {
           <a
             href="/assets/Joshua Nee Ting Feng Resume.pdf"
             download
-            className="inline-block bg-accent text-primary px-4 py-2 rounded hover:bg-primary hover:text-secondary transition"
+            className="inline-block bg-accent text-primary px-4 py-2 rounded hover:bg-secondary hover:text-primary dark:hover:bg-primary dark:hover:text-secondary transition"
           >
             Download Resume
           </a>

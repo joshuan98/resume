@@ -7,7 +7,7 @@ import projectsData from '../data/projects.json';
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="bg-secondary text-primary py-16 px-8">
+    <section id="projects" className="bg-primary text-secondary dark:bg-secondary dark:text-primary py-16 px-8">
       <h2 className="text-3xl font-bold mb-8">
         {projectsData.title}
       </h2>
@@ -69,7 +69,7 @@ const Projects: React.FC = () => {
                     <a
                       key={subIndex}
                       href={link.url}
-                      className="bg-accent text-primary px-4 py-2 rounded hover:bg-primary hover:text-secondary transition"
+                      className="bg-accent text-primary px-4 py-2 rounded hover:bg-secondary hover:text-primary dark:hover:bg-primary dark:hover:text-secondary transition"
                     >
                       {link.label}
                     </a>

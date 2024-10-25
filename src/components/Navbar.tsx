@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,6 +25,10 @@ const Navbar: React.FC = () => {
         >
           <FaBars className="w-6 h-6" />
         </button>
+
+        <div className="absolute top-3 right-4">
+          <DarkModeToggle />
+        </div>
       </div>
 
       <ul

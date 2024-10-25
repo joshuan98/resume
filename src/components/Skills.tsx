@@ -35,7 +35,7 @@ const getSkillLevelColor = (level: string) => {
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="bg-secondary text-primary py-16 px-8">
+    <section id="skills" className="bg-primary text-secondary dark:bg-secondary dark:text-primary py-16 px-8">
       <h2 className="text-3xl font-bold mb-8">
         {skillsData.title}
       </h2>

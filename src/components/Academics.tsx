@@ -7,11 +7,11 @@ import academicsData from '../data/academics.json';
 
 const Academics: React.FC = () => {
   return (
-    <section id="academics" className="bg-primary text-secondary py-16 px-8">
+    <section id="academics" className="bg-secondary text-primary dark:bg-primary dark:text-secondary py-16 px-8">
       <h2 className="text-3xl font-bold mb-8">{academicsData.title}</h2>
       <div className="relative max-w-5xl mx-auto">
         {/* Vertical timeline line */}
-        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-secondary"></div>
+        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-primary dark:border-secondary"></div>
 
         {/* Timeline Entries */}
         {academicsData.content.map((item, index) => {
@@ -39,7 +39,7 @@ const Academics: React.FC = () => {
 
               {/* Marker */}
               <motion.div
-                className="z-20 flex items-center justify-center order-2 w-8 h-8 rounded-full border-4 border-accent bg-white"
+                className="z-20 flex items-center justify-center order-2 w-8 h-8 rounded-full border-4 border-accent bg-primary dark:bg-secondary"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -49,7 +49,7 @@ const Academics: React.FC = () => {
 
               {/* Timeline Content */}
               <motion.div
-                className="order-3 w-full md:w-5/12 bg-secondary text-primary p-4 md:p-6 rounded-lg shadow-lg"
+                className="order-3 w-full md:w-5/12 bg-secondary text-primary p-4 md:p-6 rounded-lg shadow-2xl"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}

@@ -28,7 +28,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${ubuntu_mono.className} antialiased bg-black text-white`}
+        className={`${ubuntu_mono.className} antialiased bg-secondary text-primary dark:bg-primary dark:text-secondary`}
       >
         {children}
         <Analytics />

@@ -8,7 +8,7 @@ const Introduction: React.FC = () => {
   return (
     <section
       id="introduction"
-      className="bg-black text-white py-24 px-8 flex flex-col items-center justify-center"
+      className="bg-secondary text-primary dark:bg-primary dark:text-secondary py-24 px-8 flex flex-col items-center justify-center"
     >
       <div className="title-container mb-4">
         <motion.h1
