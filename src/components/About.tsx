@@ -1,17 +1,33 @@
 import Image from 'next/image';
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import aboutData from '../data/about.json';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="bg-primary text-secondary dark:bg-secondary dark:text-primary py-16 px-8">
-      <h2 className="text-3xl font-bold mb-8">
-        {aboutData.title}
-      </h2>
+    <section
+      id="about"
+      className="bg-primary text-secondary dark:bg-secondary dark:text-primary py-16 px-8"
+    >
+      <h2 className="text-3xl font-bold mb-8">{aboutData.title}</h2>
+
       <div className="flex flex-col md:flex-row justify-center items-center">
         <div className="md:w-1/2 p-4">
+          <div className="mb-4">
+            <p className="text-base text-xl italic text-secondary dark:text-primary">
+              <span className="block sm:inline">I am a {' '}</span>
+              <TypeAnimation
+                sequence={aboutData.typewriterDescriptions.flatMap((desc) => [desc, 1000])}
+                speed={50}
+                className="block sm:inline"
+                style={{ display: 'inline-block' }}
+                repeat={Infinity}
+              />
+            </p>
+          </div>
+
           {aboutData.description.map((item, index) => (
-            <p key={index} className="mb-4" style={{ textAlign: 'justify' }}>
+            <p key={index} className="mb-4 text-justify">
               {item}
             </p>
           ))}
@@ -23,6 +39,7 @@ const About: React.FC = () => {
             Download Resume
           </a>
         </div>
+
         <div className="md:w-1/2 p-4 text-center">
           <Image
             src="/assets/photo.jpeg"
@@ -34,7 +51,7 @@ const About: React.FC = () => {
           />
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 
