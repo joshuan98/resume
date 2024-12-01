@@ -29,7 +29,7 @@ const About: React.FC = () => {
             alt="Profile Photo"
             width={500}
             height={500}
-            className="mx-auto object-contain w-full md:w-auto"
+            className="mx-auto object-contain w-full md:w-auto rounded-2xl shadow-lg border-2 border-secondary dark:border-primary transform transition-transform duration-300 ease-in-out hover:scale-105 hover:rotate-2 hover:shadow-xl"
             style={{ width: 'auto', height: 'auto' }}
           />
         </div>
