@@ -2,7 +2,18 @@
   "title": "Work Experience",
   "content": [
     {
-      "dateRange": "Aug 2024 – Present",
+      "dateRange": "Jan 2025 – Present",
+      "position": "Shopee, Software Engineer (Singapore)",
+      "image": {
+        "src": "/assets/shopee.png",
+        "alt": "Shopee"
+      },
+      "description": [
+        "Backend Engineer, Marketplace Buyer, Payment"
+      ]
+    },
+    {
+      "dateRange": "Aug 2024 – Nov 2024",
       "position": "Aggregate Asset Management, Software Engineer (Singapore)",
       "image": {
         "src": "/assets/aggregate.png",
@@ -13,7 +24,7 @@
       ]
     },
     {
-      "dateRange": "Aug 2022 – Present",
+      "dateRange": "Aug 2022 – Nov 2024",
       "position": "National University of Singapore, Teaching Assistant (Singapore)",
       "image": {
         "src": "/assets/national_university_of_singapore.png",
