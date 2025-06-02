@@ -2,6 +2,26 @@
   "title": "Academics",
   "content": [
     {
+      "dateRange": "Aug 2025 - Present",
+      "institution": "Carnegie Mellon University",
+      "image": {
+        "src": "/assets/carnegie_mellon_university.jpg",
+        "alt": "Carnegie Mellon University"
+      },
+      "description": [
+        "Master of Science, Software Engineering",
+        "Expected Graduation: January 2027",
+        {
+          "title": "Course Work:",
+          "description": [
+            "Foundations of Computer Systems",
+            "Functional Programming in Practice",
+            "Foundations of Software Engineering"
+          ]
+        }
+      ]
+    },
+    {
       "dateRange": "Aug 2021 - Jan 2025",
       "institution": "National University of Singapore",
       "image": {
@@ -12,17 +32,17 @@
         "Bachelor of Engineering, Computer Engineering",
         "Honours (Highest Distinction)",
         "Grade Point Average: 4.86 / 5.0",
-        "NUS Overseas Colleges (NOC) New York, Batch 19",
         "Top 5% of Academic Year 2023/2024 Semester 2 & Academic Year 2024/2025 Semester 1 (Deans' List)",
+        "NUS Overseas Colleges (NOC) New York, Batch 19",
         {
           "title": "Course Work:",
           "description": [
-            "Programming Methodology (A+)",
-            "Data Structures and Algorithms (A)",
-            "Software Engineering & Object-Oriented Programming (A-)",
+            "Computer Engineering Capstone Project (A+)",
             "Introduction to Artificial Intelligence (A+)",
             "Introduction to Machine Learning (A)",
-            "Computer Engineering Capstone Project (A+)"
+            "Data Structures and Algorithms (A)",
+            "Software Engineering & Object-Oriented Programming (A-)",
+            "Programming Methodology (A+)"
           ]
         }
       ]

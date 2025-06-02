@@ -2,6 +2,14 @@
   "title": "Skill Proficiency",
   "content": [
     {
+      "name": "Golang",
+      "level": "proficient"
+    },
+    {
+      "name": "Java",
+      "level": "proficient"
+    },
+    {
       "name": "TypeScript",
       "level": "proficient"
     },
@@ -10,7 +18,7 @@
       "level": "proficient"
     },
     {
-      "name": "Java",
+      "name": "Next",
       "level": "proficient"
     },
     {
