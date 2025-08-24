@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
         </motion.h3>
 
         <motion.a
-          href="mailto:joshuanee@u.nus.edu"
+          href="mailto:joshuanee@cmu.edu"
           className="text-lg font-medium text-accent mb-6 block hover:underline"
           initial="initial"
           whileInView="inView"
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
           transition={{ duration: 0.6, type: 'spring', stiffness: 300 }}
           variants={popEffect}
         >
-          joshuanee@u.nus.edu
+          joshuanee@cmu.edu
         </motion.a>
 
         <ProfileLinks />

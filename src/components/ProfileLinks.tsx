@@ -23,7 +23,7 @@ const ProfileLinks: React.FC = () => {
       </a>
 
       <a
-        href="/assets/Joshua Nee Ting Feng Resume.pdf"
+        href="/assets/Resume_Joshua Nee.pdf"
         download
         className="bg-lime-500 text-black sm:text-lg text-sm px-4 py-2 rounded hover:bg-primary hover:text-secondary dark:hover:bg-secondary dark:hover:text-primary transition flex items-center justify-center"
       >

@@ -14,15 +14,7 @@
       "level": "proficient"
     },
     {
-      "name": "React",
-      "level": "proficient"
-    },
-    {
-      "name": "Next",
-      "level": "proficient"
-    },
-    {
-      "name": "PostgreSQL",
+      "name": "Python",
       "level": "proficient"
     },
     {
@@ -30,39 +22,15 @@
       "level": "proficient"
     },
     {
-      "name": "Python",
+      "name": "PostgreSQL",
       "level": "proficient"
     },
     {
-      "name": "Git",
+      "name": "MySQL",
       "level": "proficient"
     },
     {
-      "name": "Telegram Bot",
-      "level": "intermediate"
-    },
-    {
-      "name": "JavaScript",
-      "level": "intermediate"
-    },
-    {
-      "name": "C",
-      "level": "intermediate"
-    },
-    {
-      "name": "C#",
-      "level": "intermediate"
-    },
-    {
-      "name": "Unity",
-      "level": "intermediate"
-    },
-    {
-      "name": "Jersey",
-      "level": "intermediate"
-    },
-    {
-      "name": "jOOQ",
+      "name": "Amazon Web Services",
       "level": "intermediate"
     },
     {
@@ -70,7 +38,7 @@
       "level": "intermediate"
     },
     {
-      "name": "MongoDB",
+      "name": "Grafana",
       "level": "intermediate"
     }
   ]

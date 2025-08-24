@@ -3,20 +3,20 @@
   "content": [
     {
       "dateRange": "Aug 2025 - Present",
-      "institution": "Carnegie Mellon University",
+      "institution": "Carnegie Mellon University - Silicon Valley",
       "image": {
         "src": "/assets/carnegie_mellon_university.jpg",
-        "alt": "Carnegie Mellon University"
+        "alt": "Carnegie Mellon University - Silicon Valley"
       },
       "description": [
         "Master of Science, Software Engineering",
-        "Expected Graduation: January 2027",
+        "Expected Graduation: December 2026",
         {
           "title": "Course Work:",
           "description": [
+            "Foundations of Software Engineering",
             "Foundations of Computer Systems",
-            "Functional Programming in Practice",
-            "Foundations of Software Engineering"
+            "Introduction to Machine Learning for Engineers"
           ]
         }
       ]

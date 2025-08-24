@@ -94,7 +94,7 @@ const About: React.FC = () => {
             </p>
           ))}
           <a
-            href="/assets/Joshua Nee Ting Feng Resume.pdf"
+            href="/assets/Resume_Joshua Nee.pdf"
             download
             className="inline-block bg-accent text-primary px-4 py-2 rounded hover:bg-secondary hover:text-primary dark:hover:bg-primary dark:hover:text-secondary transition"
           >
