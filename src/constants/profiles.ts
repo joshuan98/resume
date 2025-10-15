@@ -14,7 +14,7 @@ export const PROFILES: ProfileConfig[] = [
     accent: "from-blue-500/80 via-blue-400/70 to-blue-600/60",
     symbol: "REC",
     href: "/recruiter",
-    tagline: "Impact snapshots & hiring-ready context",
+    tagline: "Hiring-focused impact snapshots & role-fit summaries",
   },
   {
     id: "developer",
@@ -22,7 +22,7 @@ export const PROFILES: ProfileConfig[] = [
     accent: "from-teal-400/80 via-emerald-400/70 to-teal-600/60",
     symbol: "DEV",
     href: "/developer",
-    tagline: "Architecture notes, repos, and tooling",
+    tagline: "Deep technical notes, architecture & repos",
   },
   {
     id: "stalker",
@@ -30,7 +30,7 @@ export const PROFILES: ProfileConfig[] = [
     accent: "from-amber-400/80 via-orange-500/70 to-red-500/60",
     symbol: "STK",
     href: "/stalker",
-    tagline: "Backstory, socials, and deep cuts",
+    tagline: "Personal backstory, socials & curiosities",
   },
 ];
 

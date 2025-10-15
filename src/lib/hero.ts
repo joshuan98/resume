@@ -11,7 +11,7 @@ export const createHero = (overrides: HeroOverrides): ProfileHero => {
       entry,
       1800,
     ]),
-    description: aboutData.description.slice(1).join(" "),
+    description: aboutData.description.join(" "),
     cta: "",
     ctaHref: undefined,
     secondaryCta: undefined,
