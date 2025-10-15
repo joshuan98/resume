@@ -1,0 +1,267 @@
+{
+  "title": "Projects & Hackathons",
+  "content": [
+    {
+      "title": "Artificial Intelligence - Computer Engineering Capstone Project",
+      "type": "Project",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Led a 5-member team and owned the AI component, developing and deploying a neural network on FPGA for real-time gesture recognition.",
+        "Enhanced model accuracy through hyperparameter tuning, feature engineering, and 10× data augmentation, reducing false predictions.",
+        "Directed external communications and implemented secure TCP/IP and MQTT protocols with AES encryption, concurrency handling, and error checking.",
+        "Built and tested 1- and 2-player systems with round counters and packet validation for seamless subsystem integration."
+      ],
+      "links": [
+        {
+          "label": "Project Documentation",
+          "url": "https://docs.google.com/document/d/1MEoJIQjYTqoAmHCQSQrNu5KuKk46VuhUJbG6BN8sxX8/edit?usp=sharing"
+        }
+      ]
+    },
+    {
+      "title": "Blockchain – ETHGlobal Bangkok & ETHGlobal Singapore",
+      "type": "Hackathon",
+      "image": {
+        "src": "/assets/ethglobal.png",
+        "alt": "ETHGlobal"
+      },
+      "description": [
+        "Won 3rd place among 309 projects in Worldcoin's Best Use of World ID track at ETHGlobal Singapore with ZkScholar, a decentralized app for private financial aid applications using zk-SNARKs.",
+        "Secured runner-up in the Real-World Impact: Best Social Good Application track at ETHGlobal Bangkok (2,750+ developers) with DocuEarn, a privacy-focused dApp enabling passive income from health data using zero-knowledge proofs.",
+        "Implemented frontend in Next.js and TypeScript, integrated World ID and Web3Auth for secure user authentication, and deployed smart contracts on Ethereum Sepolia."
+      ],
+      "links": [
+        {
+          "label": "ETHGlobal Singapore Repository",
+          "url": "https://github.com/joshuan98/eth-global-singapore"
+        },
+        {
+          "label": "ETHGlobal Bangkok Repository",
+          "url": "https://github.com/joshuan98/eth-global-bangkok"
+        }
+      ]
+    },
+    {
+      "title": "Quantitative Finance – QuantEdge Summer Insights Program",
+      "type": "Program",
+      "image": {
+        "src": "/assets/quantedge.png",
+        "alt": "QuantEdge"
+      },
+      "description": [
+        "Learned financial management, investment strategies, and asset allocation from senior management and analysts.",
+        "Extended externship to complete a technical project in portfolio management."
+      ],
+      "links": []
+    },
+    {
+      "title": "Hardware - FPGA Design Project",
+      "type": "Project",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Collaborated as a team of four on an FPGA project using the Basys3 board.",
+        "Developed animated menus and transitions for a Whac-A-Mole game in Verilog using Vivado.",
+        "Applied mathematical equations and physics principles for smooth transitions and RGB calculations."
+      ],
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/ee2026-team16/project"
+        },
+        {
+          "label": "Project Report",
+          "url": "https://docs.google.com/document/d/1xKzl6kFy8TLCqBC02pIpYn7VzjLDajkd1pmiagJqclA/edit"
+        }
+      ]
+    },
+    {
+      "title": "Robotics - RTOS-Based Robotic Car",
+      "type": "Project",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Achieved top 5 fastest times among 27 teams in the final race.",
+        "Developed an RTOS-based robotic car using ESP32 and KL25Z boards.",
+        "Implemented PS4 controller connectivity, Bluetooth communication, and precise motor PWM control for multidirectional movement and curved turns."
+      ],
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/cg2271-team11/Project"
+        }
+      ]
+    },
+    {
+      "title": "Blockchain - PennApps XXIV",
+      "type": "Hackathon",
+      "image": {
+        "src": "/assets/pennapps.png",
+        "alt": "University of Pennsylvania"
+      },
+      "description": [
+        "Won the Best Education Hack award at PennApps XXIV, ranking among the top 8 teams out of 354 participants.",
+        "Developed a zk-SNARKs-based solution to streamline student aid applications.",
+        "Implemented 2FA using USB and SHA256 encryption, built with Next.js, Prisma ORM, and PlanetScale."
+      ],
+      "links": [
+        {
+          "label": "Project Showcase",
+          "url": "https://devpost.com/software/draft-placeholder"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence - HawkHack 2023",
+      "type": "Hackathon",
+      "image": {
+        "src": "/assets/hawkhack.png",
+        "alt": "HawkHack"
+      },
+      "description": [
+        "Won 1st Place Best Solo Hack at HawkHack 2023 organized by Montclair State University.",
+        "Developed customizable travel itineraries using OpenAI models and integrated MapBox for interactive map features."
+      ],
+      "links": [
+        {
+          "label": "Project Showcase",
+          "url": "https://devpost.com/software/travelgpt"
+        }
+      ]
+    },
+    {
+      "title": "Telegram Bot - Study Buddy",
+      "type": "Project",
+      "image": {
+        "src": "/assets/study_buddy.jpg",
+        "alt": "Study Buddy"
+      },
+      "description": [
+        "Led the development and deployment of a Telegram Bot for student study groups using Python and MongoDB on Heroku.",
+        "Reached 80 engineering students with 29 active users in a pilot program."
+      ],
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/study-buddy-developers/study-buddy"
+        }
+      ]
+    },
+    {
+      "title": "Augmented Reality - NUS IDEATE 2022",
+      "type": "Hackathon",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Proposed a 3-pronged approach to empower elderly mental health using assistive technology, real-time monitoring, and virtual connections.",
+        "Prototyped an AR-based smart glasses application using Nreal Light for alerts and guidance."
+      ],
+      "links": [
+        {
+          "label": "Project Presentation",
+          "url": "https://www.canva.com/design/DAFIh0YIHC0/9_WxlMjQ-1wXZZxhDhdAIw/view"
+        }
+      ]
+    },
+    {
+      "title": "Game Development - Orbital - Apollo 11 (Advanced)",
+      "type": "Project",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Developed a single-player precision platformer game in Unity using C#.",
+        "Created original sprites and art, investing over 400 hours in design and gameplay development."
+      ],
+      "links": [
+        {
+          "label": "Game Page",
+          "url": "https://joshuan98.itch.io/frog-in-the-well"
+        }
+      ]
+    },
+    {
+      "title": "Augmented Reality - Summer Bootcamp on Future Interfaces with Smart Glasses",
+      "type": "Hackathon",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Developed an Android app for Nreal Light AR glasses using Unity and Microsoft Mixed Reality Toolkit.",
+        "Enabled navigation assistance in shopping malls through location triggers and user tracking."
+      ],
+      "links": [
+        {
+          "label": "Demo Video",
+          "url": "https://www.youtube.com/watch?v=GGODpfyHexY"
+        }
+      ]
+    },
+    {
+      "title": "Robotics - Alex to the Rescue!",
+      "type": "Project",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Built a tele-operated search and rescue robot using Arduino, Raspberry Pi, and LIDAR.",
+        "Implemented Hector SLAM, bare-metal programming, and TLS-secured communication."
+      ],
+      "links": [
+        {
+          "label": "Project Report",
+          "url": "https://docs.google.com/document/d/1tGFpTUYC3wpnXLF4sf86e_ZSbH5PRkSeuC0BV3aLO_M/edit"
+        }
+      ]
+    },
+    {
+      "title": "Blockchain - Singapore Blockchain Innovation Challenge 2021",
+      "type": "Hackathon",
+      "image": {
+        "src": "/assets/singapore_blockchain_innovation_challenge.png",
+        "alt": "Singapore Blockchain Innovation Challenge"
+      },
+      "description": [
+        "Won 3rd Place in the Enthusiast Track.",
+        "Developed a web app for instant insurance payouts by linking health and insurance blockchains using the Affinidi platform.",
+        "Extended project scope using ZKSync Layer-2 to minimize gas fees."
+      ],
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/adblocker-3/hichain"
+        }
+      ]
+    },
+    {
+      "title": "Robotics - A-maze-ing Race Project",
+      "type": "Project",
+      "image": {
+        "src": "/assets/national_university_of_singapore.png",
+        "alt": "National University of Singapore"
+      },
+      "description": [
+        "Built a maze-navigating mBot equipped with color detection and audio capabilities.",
+        "Integrated IR proximity, color, and ultrasonic sensors with Arduino-based control systems."
+      ],
+      "links": [
+        {
+          "label": "Project Report",
+          "url": "https://docs.google.com/document/d/1zo9rXw2VmctTetDp_5IcVHNmSQ8xb3mBoOgAy_DLc7M/edit"
+        }
+      ]
+    }
+  ]
+}

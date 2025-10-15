@@ -11,11 +11,11 @@ const ubuntu_mono = Ubuntu_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Joshua Flix | Netflix-Inspired Experience",
+  title: "Joshua Nee | Interactive Portfolio",
   description:
-    "A Netflix-styled experience built with Next.js featuring a cinematic intro and curated profile selection.",
+    "An interactive portfolio experience built with Next.js featuring a cinematic intro and curated profile selection.",
   keywords:
-    "Joshua Nee, Netflix clone, Netflix inspired, Next.js streaming UI, cinematic intro, profile selector",
+    "Joshua Nee, portfolio, interactive resume, Next.js, cinematic intro, profile selector",
 };
 
 export default function RootLayout({

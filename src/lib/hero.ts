@@ -1,10 +1,10 @@
-import aboutData from "@/data/about.json";
-import type { NetflixHero } from "@/components/NetflixProfileLayout";
+import aboutData from "@/data/profile/about.json";
+import type { ProfileHero } from "@/types";
 
-type HeroOverrides = Partial<NetflixHero>;
+type HeroOverrides = Partial<ProfileHero>;
 
-export const createHero = (overrides: HeroOverrides): NetflixHero => {
-  const base: NetflixHero = {
+export const createHero = (overrides: HeroOverrides): ProfileHero => {
+  const base: ProfileHero = {
     eyebrow: aboutData.title,
     title: aboutData.description[0],
     typewriterSequence: aboutData.typewriterDescriptions.flatMap((entry) => [

@@ -1,11 +1,6 @@
-type AccentPalette = string[];
+import type { WorkEntry, ProjectEntry } from "@/types";
 
-export type WorkEntry = {
-  position: string;
-  dateRange: string;
-  description: string[];
-  image: { src: string; alt: string };
-};
+type AccentPalette = string[];
 
 export const mapWorkItems = (
   entries: WorkEntry[],
@@ -19,14 +14,6 @@ export const mapWorkItems = (
     imageAlt: experience.image?.alt,
     details: experience.description,
   }));
-
-type ProjectEntry = {
-  title: string;
-  type?: string;
-  description: string[];
-  image?: { src: string; alt: string };
-  links?: { label: string; url: string }[];
-};
 
 export const mapProjectItems = (
   entries: ProjectEntry[],
@@ -71,7 +58,7 @@ export const mapBulletItems = (
 type Category = {
   label: string;
   items: string[];
-  accent?: string;
+  accent: string;
   imageSrc?: string;
   imageAlt?: string;
 };

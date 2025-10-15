@@ -1,7 +1,7 @@
 "use client";
 
-import IntroOverlay from "@/components/IntroOverlay";
-import ProfileSelector from "@/components/ProfileSelector";
+import IntroOverlay from "@/components/home/IntroOverlay";
+import ProfileSelector from "@/components/home/ProfileSelector";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 

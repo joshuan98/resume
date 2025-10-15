@@ -2,8 +2,8 @@
   "title": "Work Experience",
   "content": [
     {
-      "dateRange": "Jan 2025 – Present",
-      "position": "Shopee, Software Engineer (Singapore)",
+      "dateRange": "Jan 2025 – Jul 2025",
+      "position": "Shopee, Backend Software Engineer (Singapore)",
       "image": {
         "src": "/assets/shopee.png",
         "alt": "Shopee"
@@ -14,7 +14,7 @@
     },
     {
       "dateRange": "Aug 2024 – Nov 2024",
-      "position": "Aggregate Asset Management, Software Engineer (Singapore)",
+      "position": "Aggregate Asset Management, Software Engineering Intern (Singapore)",
       "image": {
         "src": "/assets/aggregate.png",
         "alt": "Aggregate Asset Management"
@@ -37,7 +37,7 @@
     },
     {
       "dateRange": "May 2024 – Aug 2024",
-      "position": "ST Engineering, Software Engineer (Singapore)",
+      "position": "ST Engineering, Software Engineering Intern (Singapore)",
       "image": {
         "src": "/assets/st_engineering.png",
         "alt": "ST Engineering"
@@ -49,7 +49,7 @@
     },
     {
       "dateRange": "Dec 2022 – Dec 2023",
-      "position": "InTune Auto, Software Engineer (New York)",
+      "position": "InTune Auto, Full-Stack Software Engineer (New York)",
       "image": {
         "src": "/assets/intune.png",
         "alt": "InTune Auto"
@@ -62,7 +62,7 @@
     },
     {
       "dateRange": "Sep 2022 – Jan 2023",
-      "position": "Solutions16, Software Engineer (Singapore)",
+      "position": "Solutions16, Software Engineering Intern (Singapore)",
       "image": {
         "src": "/assets/solutions16.png",
         "alt": "Solutions16"

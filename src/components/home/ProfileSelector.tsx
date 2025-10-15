@@ -3,42 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-
-type Profile = {
-  id: number;
-  name: string;
-  accent: string;
-  symbol: string;
-  href: string;
-  tagline: string;
-};
-
-const profiles: Profile[] = [
-  {
-    id: 1,
-    name: "Recruiter",
-    accent: "from-blue-500/80 via-blue-400/70 to-blue-600/60",
-    symbol: "REC",
-    href: "/recruiter",
-    tagline: "Impact snapshots & hiring-ready context",
-  },
-  {
-    id: 2,
-    name: "Developer",
-    accent: "from-teal-400/80 via-emerald-400/70 to-teal-600/60",
-    symbol: "DEV",
-    href: "/developer",
-    tagline: "Architecture notes, repos, and tooling",
-  },
-  {
-    id: 3,
-    name: "Stalker",
-    accent: "from-amber-400/80 via-orange-500/70 to-red-500/60",
-    symbol: "STK",
-    href: "/stalker",
-    tagline: "Backstory, socials, and deep cuts",
-  },
-];
+import { PROFILES } from "@/constants/profiles";
 
 const ProfileSelector: React.FC = () => {
   return (
@@ -58,7 +23,7 @@ const ProfileSelector: React.FC = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
       >
-        {profiles.map((profile, index) => (
+        {PROFILES.map((profile, index) => (
           <motion.div
             key={profile.id}
             className="group"
