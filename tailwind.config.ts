@@ -5,8 +5,9 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/constants/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ['selector'],
+  darkMode: ["selector"],
   theme: {
     extend: {
       colors: {
