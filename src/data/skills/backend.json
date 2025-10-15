@@ -1,0 +1,9 @@
+{
+  "category": "Backend Technologies",
+  "description": "Service frameworks, messaging patterns, and APIs used to ship resilient distributed systems.",
+  "skills": [
+    { "name": "Golang", "level": "Proficient" },
+    { "name": "Java", "level": "Proficient" },
+    { "name": "Python", "level": "Proficient" }
+  ]
+}

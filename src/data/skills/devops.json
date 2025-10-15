@@ -1,0 +1,9 @@
+{
+  "category": "DevOps & Observability",
+  "description": "Infrastructure, deployment, and monitoring tooling enabling fast, safe delivery cycles.",
+  "skills": [
+    { "name": "Amazon Web Services", "level": "Experienced" },
+    { "name": "Docker", "level": "Experienced" },
+    { "name": "Grafana", "level": "Experienced" }
+  ]
+}

@@ -11,9 +11,11 @@ const ubuntu_mono = Ubuntu_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Joshua Nee - Software Engineer",
-  description: "Personal Portfolio Website of Joshua Nee",
-  keywords: "Joshua Nee, Joshua Nee Ting Feng, Joshua, Nee, Nee Ting Feng, Joshua Ting Feng, Joshua Resume, Resume, Personal Portfolio, Portfolio, Joshua Website, Personal Website, Software Engineer, Full Stack Developer, Frontend Developer, Backend Developer",
+  title: "Joshua Flix | Netflix-Inspired Experience",
+  description:
+    "A Netflix-styled experience built with Next.js featuring a cinematic intro and curated profile selection.",
+  keywords:
+    "Joshua Nee, Netflix clone, Netflix inspired, Next.js streaming UI, cinematic intro, profile selector",
 };
 
 export default function RootLayout({
@@ -23,12 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <title>Joshua Nee - Resume</title>
-      </head>
-
       <body
-        className={`${ubuntu_mono.className} antialiased bg-secondary text-primary dark:bg-primary dark:text-secondary`}
+        className={`${ubuntu_mono.className} antialiased bg-[#141414] text-neutral-100`}
       >
         {children}
         <Analytics />

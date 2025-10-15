@@ -1,0 +1,30 @@
+{
+  "title": "Personal Cheat Codes",
+  "categories": [
+    {
+      "label": "Passions",
+      "emoji": "🛠",
+      "items": [
+        "Full-Stack Development",
+        "Artificial Intelligence",
+        "Virtual Reality"
+      ]
+    },
+    {
+      "label": "Off-hours",
+      "emoji": "🎲",
+      "items": [
+        "Board Games",
+        "Travelling"
+      ]
+    },
+    {
+      "label": "Languages",
+      "emoji": "🗣",
+      "items": [
+        "English (spoken and written)",
+        "Chinese (spoken and written)"
+      ]
+    }
+  ]
+}

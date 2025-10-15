@@ -1,0 +1,8 @@
+{
+  "category": "Databases & Storage",
+  "description": "Operational and analytical stores designed for consistency, low latency, and scale.",
+  "skills": [
+    { "name": "PostgreSQL", "level": "Proficient" },
+    { "name": "MySQL", "level": "Proficient" }
+  ]
+}

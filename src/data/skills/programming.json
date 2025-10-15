@@ -1,0 +1,11 @@
+{
+  "category": "Programming Languages",
+  "description": "Production-ready languages for services, data engineering, and product interfaces.",
+  "skills": [
+    { "name": "Golang", "level": "Proficient" },
+    { "name": "Java", "level": "Proficient" },
+    { "name": "TypeScript", "level": "Proficient" },
+    { "name": "Python", "level": "Proficient" },
+    { "name": "C++", "level": "Proficient" }
+  ]
+}

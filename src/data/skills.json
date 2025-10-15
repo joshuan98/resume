@@ -1,45 +1,59 @@
 {
-  "title": "Skill Proficiency",
-  "content": [
+  "title": "Toolkit Snapshot",
+  "sections": [
     {
-      "name": "Golang",
-      "level": "proficient"
+      "name": "Programming Languages",
+      "tagline": "Core languages and runtimes for building reliable products end-to-end.",
+      "dataFile": "skills/programming.json",
+      "image": {
+        "src": "/assets/programming.png",
+        "alt": "Programming languages"
+      }
     },
     {
-      "name": "Java",
-      "level": "proficient"
+      "name": "Frontend Frameworks",
+      "tagline": "Modern web stacks for delivering polished, responsive user experiences.",
+      "dataFile": "skills/frontend.json",
+      "image": {
+        "src": "/assets/frontend.png",
+        "alt": "Frontend frameworks"
+      }
     },
     {
-      "name": "TypeScript",
-      "level": "proficient"
+      "name": "Backend Systems",
+      "tagline": "Service frameworks and patterns keeping distributed systems reliable at scale.",
+      "dataFile": "skills/backend.json",
+      "image": {
+        "src": "/assets/backend.png",
+        "alt": "Backend systems"
+      }
     },
     {
-      "name": "Python",
-      "level": "proficient"
+      "name": "DevOps & Observability",
+      "tagline": "Infrastructure, deployment, and monitoring tooling for fast, safe delivery.",
+      "dataFile": "skills/devops.json",
+      "image": {
+        "src": "/assets/devops.png",
+        "alt": "DevOps and observability"
+      }
     },
     {
-      "name": "C++",
-      "level": "proficient"
+      "name": "Data Platforms",
+      "tagline": "SQL and NoSQL stores tuned for transactional integrity and realtime insights.",
+      "dataFile": "skills/database.json",
+      "image": {
+        "src": "/assets/database.png",
+        "alt": "Data platforms"
+      }
     },
     {
-      "name": "PostgreSQL",
-      "level": "proficient"
-    },
-    {
-      "name": "MySQL",
-      "level": "proficient"
-    },
-    {
-      "name": "Amazon Web Services",
-      "level": "intermediate"
-    },
-    {
-      "name": "Docker",
-      "level": "intermediate"
-    },
-    {
-      "name": "Grafana",
-      "level": "intermediate"
+      "name": "Machine Learning",
+      "tagline": "Model development stacks for ML systems, LLM copilots, and intelligent features.",
+      "dataFile": "skills/ml.json",
+      "image": {
+        "src": "/assets/ml.png",
+        "alt": "Machine learning"
+      }
     }
   ]
 }

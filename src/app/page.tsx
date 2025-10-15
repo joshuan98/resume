@@ -1,48 +1,47 @@
-'use client';
+"use client";
 
-import BackToTopButton from '@/components/BackToTopButton';
-import { motion } from 'framer-motion';
-import React, { useState } from 'react';
-import About from '../components/About';
-import Academics from '../components/Academics';
-import Contact from '../components/Contact';
-import Introduction from '../components/Introduction';
-import LoadingScreen from '../components/LoadingScreen';
-import Navbar from '../components/Navbar';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
-import Work from '../components/Work';
+import IntroOverlay from "@/components/IntroOverlay";
+import ProfileSelector from "@/components/ProfileSelector";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+
+const INTRO_OVERLAY_DURATION = 2200;
+const CONTENT_FADE_DELAY = 2700;
 
 const HomePage: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [showOverlay, setShowOverlay] = useState(true);
+  const [contentVisible, setContentVisible] = useState(false);
 
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
+  useEffect(() => {
+    const overlayTimer = setTimeout(
+      () => setShowOverlay(false),
+      INTRO_OVERLAY_DURATION
+    );
+    const contentTimer = setTimeout(
+      () => setContentVisible(true),
+      CONTENT_FADE_DELAY
+    );
+
+    return () => {
+      clearTimeout(overlayTimer);
+      clearTimeout(contentTimer);
+    };
+  }, []);
 
   return (
-    <>
-      <div className={`relative ${isLoading ? 'overflow-hidden' : ''}`}>
-        {isLoading && <LoadingScreen onFinishLoading={handleLoadingComplete} />}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-        >
-          <Navbar />
-          <div className="sections">
-            <Introduction />
-            <About />
-            <Work />
-            <Projects />
-            <Academics />
-            <Skills />
-            <Contact />
-          </div>
-          <BackToTopButton />
-        </motion.div>
-      </div>
-    </>
+    <div className="relative min-h-screen bg-[#141414] text-white">
+      <AnimatePresence>{showOverlay && <IntroOverlay />}</AnimatePresence>
+
+      <motion.main
+        aria-hidden={!contentVisible}
+        className="relative z-10 flex min-h-screen items-center justify-center px-6 pb-16"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: contentVisible ? 1 : 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
+        <ProfileSelector />
+      </motion.main>
+    </div>
   );
 };
 

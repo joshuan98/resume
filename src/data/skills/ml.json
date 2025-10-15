@@ -1,0 +1,7 @@
+{
+  "category": "Machine Learning",
+  "description": "Tooling for model development, evaluation, and LLM-enabled product features.",
+  "skills": [
+    { "name": "Python", "level": "Proficient" }
+  ]
+}

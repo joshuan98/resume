@@ -3,6 +3,7 @@
   "content": [
     {
       "title": "Artificial Intelligence – Computer Engineering Capstone Project",
+      "type": "Project",
       "image": {
         "src": "/assets/national_university_of_singapore.png",
         "alt": "Computer Engineering Capstone Project"
@@ -20,6 +21,7 @@
     },
     {
       "title": "Blockchain – ETHGlobal Bangkok & ETHGlobal Singapore",
+      "type": "Hackathon",
       "image": {
         "src": "/assets/ethglobal.png",
         "alt": "ETHGlobal"
@@ -41,6 +43,7 @@
     },
     {
       "title": "Quantitative Finance – QuantEdge Summer Insights Program",
+      "type": "Project",
       "image": {
         "src": "/assets/quantedge.png",
         "alt": "QuantEdge"
@@ -52,6 +55,7 @@
     },
     {
       "title": "Telegram Bot - Study Buddy",
+      "type": "Project",
       "image": {
         "src": "/assets/study_buddy.jpg",
         "alt": "Study Buddy"

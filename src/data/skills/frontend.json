@@ -1,0 +1,7 @@
+{
+  "category": "Frontend Frameworks",
+  "description": "Frameworks and design systems for crafting responsive interfaces and polished product flows.",
+  "skills": [
+    { "name": "TypeScript", "level": "Proficient" }
+  ]
+}
