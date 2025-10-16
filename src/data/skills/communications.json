@@ -1,0 +1,9 @@
+{
+  "category": "Communications",
+  "description": "Realtime and message-driven communication protocols and event streaming platforms.",
+  "skills": [
+    { "name": "WebSocket", "level": "Proficient" },
+    { "name": "MQTT", "level": "Proficient" },
+    { "name": "Apache Kafka", "level": "Proficient" }
+  ]
+}

@@ -23,6 +23,6 @@ export const getLink = (label: string): string => {
 
 export const getLinkedInUrl = (): string => getLink("LinkedIn");
 export const getGitHubUrl = (): string => getLink("GitHub");
-export const getTwitterUrl = (): string => getLink("Twitter/X");
+export const getTwitterUrl = (): string => getLink("Twitter");
 
 export const getAllLinks = () => links.links;

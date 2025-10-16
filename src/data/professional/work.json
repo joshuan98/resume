@@ -9,7 +9,11 @@
         "alt": "Shopee"
       },
       "description": [
-        "Backend Engineer, Marketplace Buyer, Buyer Order Payment"
+        "Developed e-commerce and payment systems with Kafka/MySQL, overseeing 10K+ daily transactions",
+        "Spearheaded migration of legacy Golang microservices, cutting tech debt by 20% through modular refactor",
+        "Restored notification microservice deployability for 100+ users within 2 weeks by redesigning release workflows",
+        "Engineered nationwide features with blacklist/whitelist logic and redirect fixes, supporting 100K+ user interactions",
+        "Commenced role after early graduation; concluded tenure upon Master’s program admission"
       ]
     },
     {
@@ -20,7 +24,9 @@
         "alt": "Aggregate Asset Management"
       },
       "description": [
-        "Conducted in-depth research and development of multiple trading strategies, analyzing market trends, backtesting models, and optimizing strategies for risk management and profitability."
+        "Researched and tested S&P 500 and global index forecasting models in Python to evaluate predictive accuracy",
+        "Backtested long-short momentum and risk-parity strategies, benchmarking Sharpe and volatility",
+        "Validated GARCH and neural network models for return and risk forecasting"
       ]
     },
     {
@@ -31,8 +37,8 @@
         "alt": "National University of Singapore"
       },
       "description": [
-        "Conducted tutorials for over 60 students across multiple modules, including Data Structures and Algorithms, Software Engineering & Object-Oriented Programming, and Introduction to Machine Learning; responsibilities included designing course materials, creating and presenting tutorial content, and weekly consultation services.",
-        "Mentored 24 student teams across 2 iterations of self-directed software development projects, specializing in Unity game development, Telegram bot creation, and web application development, resulting in 17 teams achieving Apollo 11 (Advanced) level and 7 teams attaining Gemini (Intermediate) level."
+        "Conducted tutorials for over 60 students across multiple modules, including Data Structures and Algorithms, Software Engineering & Object-Oriented Programming, and Introduction to Machine Learning; responsibilities included designing course materials, creating and presenting tutorial content, and weekly consultation services",
+        "Mentored 24 student teams across 2 iterations of self-directed software development projects, specializing in Unity game development, Telegram bot creation, and web application development, resulting in 17 teams achieving Apollo 11 (Advanced) level and 7 teams attaining Gemini (Intermediate) level"
       ]
     },
     {
@@ -43,8 +49,9 @@
         "alt": "ST Engineering"
       },
       "description": [
-        "Developed and maintained 11 XR applications in Swift and VisionOS for Apple Vision Pro, such as user authentication, interactive scenes, and remote monitoring.",
-        "Unified various application capabilities into a cohesive solution, providing strategic insights and enhancing the company’s readiness for leveraging Apple Vision Pro in future projects."
+        "Prototyped Apple Vision Pro applications within 3 months of US launch, preceding Singapore release by 2 months",
+        "Designed 3D interactions and live geo-tracking in Swift by reverse-engineering undocumented VisionOS behaviors",
+        "Architected reusable mixed reality components, reducing future integration time by 30%"
       ]
     },
     {
@@ -55,9 +62,11 @@
         "alt": "InTune Auto"
       },
       "description": [
-        "Engineered and deployed 9 major projects, including digital authorization, automated reminders, appointment scheduling, Twilio SMS/Gmail integration, EC2 image attachments, and OpenAI utilization.",
-        "Revamped testing infrastructure, fixing over 50% of broken Cypress frontend tests and achieving over 90% coverage of backend endpoints with JUnit tests.",
-        "Leveraged technologies like Heroku, Netlify, DataDog, AWS (ECR, ECS), and Docker, and coded in TypeScript, React, Jersey, jOOQ, and PostgreSQL."
+        "Drove strategic acquisition by Highland Creek Partners through consistent full-stack product delivery",
+        "Collaborated in a 4-engineer startup team using React, Java, and PostgreSQL with end-to-end ownership",
+        "Innovated custom scheduling platform to improve enterprise booking efficiency with advanced availability logic",
+        "Reduced data retrieval latency from minutes to seconds by redesigning pagination and query architecture",
+        "Gathered and defined client requirements to ship features weekly, maintaining 99% customer retention"
       ]
     },
     {
@@ -68,9 +77,9 @@
         "alt": "Solutions16"
       },
       "description": [
-        "Devised an end-to-end monitoring system using MosquittoMQTT, DigitalOcean, LilyGO SIM7600, and ESP32, integrated with Blynk and MongoDB to collect over 200,000 data points.",
-        "Implemented just-in-time alerts for WhatsApp and Telegram via Meta for Developers and BotFather, successfully averting 2 instances of severe property damage from pump room leaks.",
-        "Automated email notifications using the Blynk IoT platform, eliminating manual 8-hour updates."
+        "Constructed firmware architecture enabling rapid microcontroller onboarding, reducing deployment time by 30%",
+        "Orchestrated reliability improvements with fallback data buffering to ensure resilience during network disruptions",
+        "Automated fault detection alerts via WhatsApp/Telegram APIs, cutting user response time from 8 hours to minutes"
       ]
     }
   ]

@@ -22,25 +22,38 @@
       ]
     },
     {
-      "title": "Blockchain – ETHGlobal Bangkok & ETHGlobal Singapore",
+      "title": "Blockchain – ETHGlobal Bangkok",
       "type": "Hackathon",
       "image": {
         "src": "/assets/ethglobal.png",
         "alt": "ETHGlobal"
       },
       "description": [
-        "Won 3rd place among 309 projects in Worldcoin's Best Use of World ID track at ETHGlobal Singapore with ZkScholar, a decentralized app for private financial aid applications using zk-SNARKs.",
-        "Secured runner-up in the Real-World Impact: Best Social Good Application track at ETHGlobal Bangkok (2,750+ developers) with DocuEarn, a privacy-focused dApp enabling passive income from health data using zero-knowledge proofs.",
-        "Implemented frontend in Next.js and TypeScript, integrated World ID and Web3Auth for secure user authentication, and deployed smart contracts on Ethereum Sepolia."
+        "Secured runner-up in the Real-World Impact: Best Social Good Application track on Polygon, competing against 2,750+ developers, with DocuEarn, a privacy-focused dApp enabling passive income from health data using zero-knowledge proofs.",
+        "Implemented Web3Auth for user-friendly access to blockchain features, a seamless frontend using TypeScript, React, and Vite, and integrated Privado ID for cryptographic credentials, along with Sign Protocol for ensuring data authenticity."
+      ],
+      "links": [
+        {
+          "label": "ETHGlobal Bangkok Repository",
+          "url": "https://github.com/joshuan98/eth-global-bangkok"
+        }
+      ]
+    },
+    {
+      "title": "Blockhain - ETHGlobal Singapore",
+      "type": "Hackathon",
+      "image": {
+        "src": "/assets/ethglobal.png",
+        "alt": "ETHGlobal"
+      },
+      "description": [
+        "Won 3rd place among 309 projects in Worldcoin's Best Use of World ID track at ETHGlobal Singapore by developing ZkScholar, a decentralized app for private financial aid applications using zk-SNARKs, collaborating in a team of three.",
+        "Built the frontend with Next.js and TypeScript, integrated World ID for secure authentication, deployed smart contracts on Ethereum Sepolia using Hardhat and Infura, utilised ethers.js and Protokit for blockchain interaction and data management."
       ],
       "links": [
         {
           "label": "ETHGlobal Singapore Repository",
           "url": "https://github.com/joshuan98/eth-global-singapore"
-        },
-        {
-          "label": "ETHGlobal Bangkok Repository",
-          "url": "https://github.com/joshuan98/eth-global-bangkok"
         }
       ]
     },

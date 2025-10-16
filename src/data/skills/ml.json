@@ -2,6 +2,17 @@
   "category": "Machine Learning",
   "description": "Tooling for model development, evaluation, and LLM-enabled product features.",
   "skills": [
-    { "name": "Python", "level": "Proficient" }
+    {
+      "name": "Python",
+      "level": "Proficient"
+    },
+    {
+      "name": "TensorFlow",
+      "level": "Proficient"
+    },
+    {
+      "name": "PyTorch",
+      "level": "Experienced"
+    }
   ]
 }

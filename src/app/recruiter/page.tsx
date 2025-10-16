@@ -1,30 +1,32 @@
 "use client";
 
 import ProfileLayout from "@/components/layout/ProfileLayout";
-import type { ContentRow } from "@/types";
+import {
+  ACADEMICS_ACCENTS,
+  getProjectAccents,
+  getWorkAccents,
+  TOOLKIT_ACCENTS,
+} from "@/constants/accentColors";
 import academicsData from "@/data/professional/academics.json";
 import projectsData from "@/data/professional/projects.json";
-import toolkitIndex from "@/data/skills/index.json";
+import workData from "@/data/professional/work.json";
 import backend from "@/data/skills/backend.json";
+import communications from "@/data/skills/communications.json";
 import database from "@/data/skills/database.json";
 import devops from "@/data/skills/devops.json";
+import devtools from "@/data/skills/devtools.json";
 import frontend from "@/data/skills/frontend.json";
+import toolkitIndex from "@/data/skills/index.json";
 import ml from "@/data/skills/ml.json";
 import programming from "@/data/skills/programming.json";
-import workData from "@/data/professional/work.json";
-import { createHero } from "@/lib/hero";
 import {
   mapBulletItems,
   mapProjectItems,
   mapWorkItems,
 } from "@/lib/contentMappers";
-import {
-  getWorkAccents,
-  getProjectAccents,
-  ACADEMICS_ACCENTS,
-  TOOLKIT_ACCENTS,
-} from "@/constants/accentColors";
+import { createHero } from "@/lib/hero";
 import { getLinkedInUrl } from "@/lib/links";
+import type { ContentRow } from "@/types";
 import React from "react";
 
 const hero = createHero({
@@ -39,7 +41,7 @@ const hero = createHero({
 const workItems = mapWorkItems(workData.content, getWorkAccents("recruiter"));
 
 const projectItems = mapProjectItems(
-  projectsData.content.slice(0, 3),
+  projectsData.content.slice(0, 4),
   getProjectAccents("recruiter"),
   () => true
 );
@@ -75,7 +77,9 @@ const toolkitDataMap: Record<string, { skills: { name: string; level: string }[]
   "skills/backend.json": backend,
   "skills/devops.json": devops,
   "skills/database.json": database,
+  "skills/communications.json": communications,
   "skills/ml.json": ml,
+  "skills/devtools.json": devtools,
 };
 
 const toolkitItems = toolkitIndex.sections

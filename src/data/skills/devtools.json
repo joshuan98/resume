@@ -1,0 +1,10 @@
+{
+  "category": "Developer Tools & Productivity",
+  "description": "Version control, CI/CD, and AI-assisted developer tooling used to ship software efficiently.",
+  "skills": [
+    { "name": "Git", "level": "Proficient" },
+    { "name": "CI/CD Pipeline", "level": "Proficient" },
+    { "name": "Copilot", "level": "Experienced" },
+    { "name": "Codex", "level": "Experienced" }
+  ]
+}

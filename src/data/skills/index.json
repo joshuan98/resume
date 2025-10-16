@@ -47,12 +47,30 @@
       }
     },
     {
+      "name": "Realtime & Messaging",
+      "tagline": "Protocols and event streaming platforms powering realtime features and async workflows.",
+      "dataFile": "skills/communications.json",
+      "image": {
+        "src": "/assets/communications.png",
+        "alt": "Communications"
+      }
+    },
+    {
       "name": "Machine Learning",
       "tagline": "Model development stacks for ML systems, LLM copilots, and intelligent features.",
       "dataFile": "skills/ml.json",
       "image": {
         "src": "/assets/ml.png",
         "alt": "Machine learning"
+      }
+    },
+    {
+      "name": "Developer Tools",
+      "tagline": "Tooling that improves developer productivity and delivery confidence.",
+      "dataFile": "skills/devtools.json",
+      "image": {
+        "src": "/assets/devtools.png",
+        "alt": "Developer tools"
       }
     }
   ]
