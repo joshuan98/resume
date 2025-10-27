@@ -2,6 +2,24 @@
   "title": "Projects & Hackathons",
   "content": [
     {
+      "title": "LLM Agents - A New Agent",
+      "type": "Hackathon",
+      "image": {
+        "src": "/assets/a_new_agent.jpg",
+        "alt": "A New Agent Hackathon"
+      },
+      "description": [
+        "Clinched Vapi Track (200+ builders) for a tool-using LLM scheduling agent with multimodal (text + voice) dialogue.",
+        "Grounded dialogs in ClinicalTrials.gov data, integrated with Google Calendar and Supabase Edge for timetabling."
+      ],
+      "links": [
+        {
+          "label": "Hackathon Event Page",
+          "url": "https://luma.com/6r1veoi6?tk=ecFxCV"
+        }
+      ]
+    },
+    {
       "title": "Artificial Intelligence - Computer Engineering Capstone Project",
       "type": "Project",
       "image": {
