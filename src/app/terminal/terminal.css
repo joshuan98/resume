@@ -23,6 +23,38 @@
   top: 18px;
 }
 
+.terminal-shell .react-terminal-window-buttons button {
+  position: relative;
+}
+
+.terminal-shell .react-terminal-window-buttons button::before {
+  color: rgba(12, 12, 12, 0.7);
+  font-size: 0.45rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  transition: opacity 0.15s ease;
+}
+
+.terminal-shell .react-terminal-window-buttons:hover button::before {
+  opacity: 1;
+}
+
+.terminal-shell .react-terminal-window-buttons .red-btn::before {
+  content: "x";
+}
+
+.terminal-shell .react-terminal-window-buttons .yellow-btn::before {
+  content: "-";
+}
+
+.terminal-shell .react-terminal-window-buttons .green-btn::before {
+  content: "<>";
+}
+
 .terminal-shell .react-terminal {
   overflow-x: auto;
 }
