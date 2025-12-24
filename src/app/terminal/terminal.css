@@ -31,6 +31,14 @@
   line-height: 1.7;
 }
 
+.terminal-shell .terminal-hidden-input {
+  opacity: 0;
+}
+
+.terminal-shell .terminal-hidden-input::placeholder {
+  color: transparent;
+}
+
 .terminal-shell pre {
   display: inline-block;
   font-family: inherit;
