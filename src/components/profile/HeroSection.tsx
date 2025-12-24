@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
-import React from "react";
 import type { ProfileHero } from "@/types";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 type HeroSectionProps = {
   hero: ProfileHero;
@@ -55,7 +55,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ hero }) => {
               {hero.eyebrow}
             </span>
             {Array.isArray(hero.typewriterSequence) &&
-            hero.typewriterSequence.length > 0 ? (
+              hero.typewriterSequence.length > 0 ? (
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -105,22 +105,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ hero }) => {
                     ? undefined
                     : "noopener noreferrer"
                 }
-                className="rounded bg-white px-6 py-2 text-sm font-semibold text-black transition hover:bg-neutral-200"
+                className="rounded bg-white px-6 py-2 text-sm font-semibold text-black transition hover:bg-neutral-200 flex items-center gap-2"
               >
+                {hero.ctaIcon && (
+                  <Image
+                    src={`/assets/${hero.ctaIcon}`}
+                    alt={hero.cta}
+                    width={16}
+                    height={16}
+                    className="inline-block"
+                  />
+                )}
                 {hero.cta}
               </a>
             )}
-            {hero.secondaryCta && hero.secondaryCtaHref && (
-              <a
-                href={hero.secondaryCtaHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded border border-white/40 px-6 py-2 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
-              >
-                {hero.secondaryCta}
-              </a>
-            )}
-            {hero.tertiaryCta?.map((cta) => (
+            {hero.secondaryCta?.map((cta) => (
               <a
                 key={cta.href}
                 href={cta.href}

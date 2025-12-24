@@ -1,26 +1,29 @@
 "use client";
 
 import ProfileLayout from "@/components/layout/ProfileLayout";
-import type { ContentRow } from "@/types";
-import { createHero } from "@/lib/hero";
+import { generateExtracurricularAccents } from "@/constants/accentColors";
+import extracurriculars from "@/data/personal/extracurriculars.json";
+import interests from "@/data/personal/interests.json";
+import volunteering from "@/data/personal/volunteering.json";
 import {
   mapBulletItems,
   mapCategoryItems,
 } from "@/lib/contentMappers";
-import { generateExtracurricularAccents } from "@/constants/accentColors";
 import { emojiDataUri } from "@/lib/emojiDataUri";
-import { getLinkedInUrl, getTwitterUrl, getGitHubUrl } from "@/lib/links";
-import extracurriculars from "@/data/personal/extracurriculars.json";
-import interests from "@/data/personal/interests.json";
-import volunteering from "@/data/personal/volunteering.json";
+import { createHero } from "@/lib/hero";
+import { getGitHubUrl, getLinkedInUrl, getTwitterUrl } from "@/lib/links";
+import type { ContentRow } from "@/types";
 import React from "react";
 
 const hero = createHero({
-  cta: "LinkedIn",
-  ctaHref: getLinkedInUrl(),
-  secondaryCta: "Twitter",
-  secondaryCtaHref: getTwitterUrl(),
-  tertiaryCta: [{ label: "GitHub", href: getGitHubUrl() }],
+  cta: "Terminal",
+  ctaHref: "/terminal",
+  ctaIcon: "terminal.png",
+  secondaryCta: [
+    { label: "LinkedIn", href: getLinkedInUrl() },
+    { label: "Twitter", href: getTwitterUrl() },
+    { label: "GitHub", href: getGitHubUrl() },
+  ],
   background:
     "radial-gradient(circle at 15% 18%, rgba(248,113,113,0.45), transparent 55%), radial-gradient(circle at 80% 18%, rgba(220,38,38,0.38), transparent 50%), linear-gradient(135deg, rgba(32,6,10,0.95), rgba(45,8,12,0.92))",
 });

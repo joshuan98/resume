@@ -27,9 +27,8 @@ export type ProfileHero = {
   description: string;
   cta: string;
   ctaHref?: string;
-  secondaryCta?: string;
-  secondaryCtaHref?: string;
-  tertiaryCta?: { label: string; href: string }[];
+  ctaIcon?: string;
+  secondaryCta?: { label: string; href: string }[];
   imageSrc?: string;
   imageAlt?: string;
   imageShadow?: boolean;
