@@ -15,8 +15,6 @@ export const createHero = (overrides: HeroOverrides): ProfileHero => {
     cta: "",
     ctaHref: undefined,
     secondaryCta: undefined,
-    secondaryCtaHref: undefined,
-    tertiaryCta: undefined,
     imageSrc: "/assets/photo.jpeg",
     imageAlt: "Joshua Nee",
     imageShadow: true,

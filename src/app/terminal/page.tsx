@@ -6,6 +6,7 @@ import standardFont from "figlet/fonts/Standard";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ColorMode, TerminalOutput } from "react-terminal-ui";
 import tinygradient from "tinygradient";
@@ -91,9 +92,17 @@ const OutputLine = ({ text, delay = 0 }: { text: string; delay?: number }) => (
 
 const TerminalPage = () => {
   const [isReady, setIsReady] = useState(false);
+  const router = useRouter();
+
+  const handleTerminalBack = () => {
+    if (typeof window !== "undefined" && window.history.length > 1) {
+      router.back();
+      return;
+    }
+    router.push("/stalker");
+  };
 
   useEffect(() => {
-    // Delay to allow Terminal to load and start animations smoothly
     const timer = setTimeout(() => setIsReady(true), 50);
     return () => clearTimeout(timer);
   }, []);
@@ -111,7 +120,14 @@ const TerminalPage = () => {
 
         <div className="relative mt-10" style={{ opacity: isReady ? 1 : 0, transition: 'opacity 0.3s ease-in' }}>
           <div className="terminal-shell animate-terminal-in motion-reduce:animate-none">
-            <Terminal name="Terminal" colorMode={ColorMode.Dark} height="auto">
+            <Terminal
+              name="Terminal"
+              colorMode={ColorMode.Dark}
+              height="auto"
+              redBtnCallback={handleTerminalBack}
+              yellowBtnCallback={handleTerminalBack}
+              greenBtnCallback={handleTerminalBack}
+            >
               <PromptLine text='figlet "About Me" | lolcat' delay={0.1} />
               <TerminalOutput>
                 <pre
