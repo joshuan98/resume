@@ -3,12 +3,18 @@
 import academicsData from "@/data/professional/academics.json";
 import figlet from "figlet";
 import standardFont from "figlet/fonts/Standard";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo } from "react";
-import Terminal, { ColorMode, TerminalOutput } from "react-terminal-ui";
+import { useEffect, useState } from "react";
+import { ColorMode, TerminalOutput } from "react-terminal-ui";
 import tinygradient from "tinygradient";
 import "./terminal.css";
+
+const Terminal = dynamic(
+  () => import("react-terminal-ui").then((mod) => mod.default),
+  { ssr: false }
+);
 
 figlet.parseFont("Standard", standardFont);
 
@@ -19,6 +25,28 @@ const lolcatGradient = tinygradient([
   { color: "#facc15", pos: 0.8 },
   { color: "#f97316", pos: 1 },
 ]);
+
+const figletText = figlet.textSync("About Me", {
+  horizontalLayout: "default",
+  verticalLayout: "default",
+});
+const rawFigletLines = figletText.split("\n");
+let figletStart = 0;
+let figletEnd = rawFigletLines.length;
+while (figletStart < figletEnd && rawFigletLines[figletStart].trim() === "") {
+  figletStart += 1;
+}
+while (figletEnd > figletStart && rawFigletLines[figletEnd - 1].trim() === "") {
+  figletEnd -= 1;
+}
+const asciiLines = rawFigletLines.slice(figletStart, figletEnd);
+const lolcatLines = asciiLines.map((line) => {
+  const colors = lolcatGradient.hsv(Math.max(line.length, 1), "short");
+  return line.split("").map((char, index) => ({
+    char,
+    color: colors[index]?.toHexString() ?? "#e2e8f0",
+  }));
+});
 
 const academicEntry = academicsData.content?.[0];
 const academicText = (academicEntry?.description ?? [])
@@ -62,34 +90,13 @@ const OutputLine = ({ text, delay = 0 }: { text: string; delay?: number }) => (
 );
 
 const TerminalPage = () => {
-  const asciiLines = useMemo(() => {
-    const text = figlet.textSync("About Me", {
-      horizontalLayout: "default",
-      verticalLayout: "default",
-    });
-    const rawLines = text.split("\n");
-    let start = 0;
-    let end = rawLines.length;
-    while (start < end && rawLines[start].trim() === "") {
-      start += 1;
-    }
-    while (end > start && rawLines[end - 1].trim() === "") {
-      end -= 1;
-    }
-    return rawLines.slice(start, end);
-  }, []);
+  const [isReady, setIsReady] = useState(false);
 
-  const lolcatLines = useMemo(
-    () =>
-      asciiLines.map((line) => {
-        const colors = lolcatGradient.hsv(Math.max(line.length, 1), "short");
-        return line.split("").map((char, index) => ({
-          char,
-          color: colors[index]?.toHexString() ?? "#e2e8f0",
-        }));
-      }),
-    [asciiLines]
-  );
+  useEffect(() => {
+    // Delay to allow Terminal to load and start animations smoothly
+    const timer = setTimeout(() => setIsReady(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(34,197,94,0.14),transparent_60%),radial-gradient(circle_at_15%_75%,rgba(250,204,21,0.12),transparent_55%),#050505] text-slate-100">
@@ -102,7 +109,7 @@ const TerminalPage = () => {
           Back
         </Link>
 
-        <div className="relative mt-10">
+        <div className="relative mt-10" style={{ opacity: isReady ? 1 : 0, transition: 'opacity 0.3s ease-in' }}>
           <div className="terminal-shell animate-terminal-in motion-reduce:animate-none">
             <Terminal name="Terminal" colorMode={ColorMode.Dark} height="auto">
               <PromptLine text='figlet "About Me" | lolcat' delay={0.1} />
@@ -154,7 +161,6 @@ const TerminalPage = () => {
                 alt="Joshua Nee"
                 width={520}
                 height={520}
-                priority
                 className="h-full w-full rounded-full object-cover"
               />
             </div>
