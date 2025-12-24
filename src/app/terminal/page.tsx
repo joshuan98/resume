@@ -1,24 +1,167 @@
 "use client";
 
-import ProfileLayout from "@/components/layout/ProfileLayout";
-import { createHero } from "@/lib/hero";
-import React from "react";
-const hero = createHero({
-  cta: "Back",
-  ctaHref: "/stalker",
-  background:
-    "radial-gradient(circle at 20% 18%, rgba(56,189,248,0.2), transparent 60%), radial-gradient(circle at 76% 16%, rgba(99,102,241,0.18), transparent 55%), linear-gradient(135deg, rgba(6,18,46,0.96), rgba(10,25,60,0.98))",
-});
+import academicsData from "@/data/professional/academics.json";
+import figlet from "figlet";
+import standardFont from "figlet/fonts/Standard";
+import Image from "next/image";
+import Link from "next/link";
+import { useMemo } from "react";
+import Terminal, { ColorMode, TerminalOutput } from "react-terminal-ui";
+import tinygradient from "tinygradient";
+import "./terminal.css";
 
-const TerminalPage: React.FC = () => {
+figlet.parseFont("Standard", standardFont);
+
+const lolcatGradient = tinygradient([
+  { color: "#22c55e", pos: 0 },
+  { color: "#86efac", pos: 0.45 },
+  { color: "#a3e635", pos: 0.65 },
+  { color: "#facc15", pos: 0.8 },
+  { color: "#f97316", pos: 1 },
+]);
+
+const academicEntry = academicsData.content?.[0];
+const academicText = (academicEntry?.description ?? [])
+  .map((entry) => {
+    if (typeof entry === "string") {
+      return entry;
+    }
+    if (entry && typeof entry === "object" && "title" in entry) {
+      const details = Array.isArray(entry.description)
+        ? entry.description.map((item: string) => `  - ${item}`)
+        : [];
+      return [entry.title, ...details].join("\n");
+    }
+    return "";
+  })
+  .filter(Boolean)
+  .join("\n");
+
+const PromptLine = ({ text, delay = 0 }: { text: string; delay?: number }) => (
+  <TerminalOutput>
+    <span
+      className="inline-flex items-center gap-2 text-slate-100 animate-line-in motion-reduce:animate-none"
+      style={{ animationDelay: `${delay}s` }}
+    >
+      <span className="text-emerald-400">➜</span>
+      <span className="text-emerald-300">~</span>
+      <span>{text}</span>
+    </span>
+  </TerminalOutput>
+);
+
+const OutputLine = ({ text, delay = 0 }: { text: string; delay?: number }) => (
+  <TerminalOutput>
+    <span
+      className="text-slate-200 animate-line-in motion-reduce:animate-none"
+      style={{ animationDelay: `${delay}s` }}
+    >
+      {text}
+    </span>
+  </TerminalOutput>
+);
+
+const TerminalPage = () => {
+  const asciiLines = useMemo(() => {
+    const text = figlet.textSync("About Me", {
+      horizontalLayout: "default",
+      verticalLayout: "default",
+    });
+    const rawLines = text.split("\n");
+    let start = 0;
+    let end = rawLines.length;
+    while (start < end && rawLines[start].trim() === "") {
+      start += 1;
+    }
+    while (end > start && rawLines[end - 1].trim() === "") {
+      end -= 1;
+    }
+    return rawLines.slice(start, end);
+  }, []);
+
+  const lolcatLines = useMemo(
+    () =>
+      asciiLines.map((line) => {
+        const colors = lolcatGradient.hsv(Math.max(line.length, 1), "short");
+        return line.split("").map((char, index) => ({
+          char,
+          color: colors[index]?.toHexString() ?? "#e2e8f0",
+        }));
+      }),
+    [asciiLines]
+  );
+
   return (
-    <ProfileLayout
-      heading=""
-      subheading="Terminal"
-      navLabel="Terminal"
-      hero={hero}
-      rows={[]}
-    />
+    <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(34,197,94,0.14),transparent_60%),radial-gradient(circle_at_15%_75%,rgba(250,204,21,0.12),transparent_55%),#050505] text-slate-100">
+      <div className="mx-auto w-full max-w-6xl px-6 pb-20 pt-10">
+        <Link
+          href="/stalker"
+          className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-white/70 transition hover:border-white/30 hover:text-white"
+        >
+          <span className="text-base leading-none">{"<"}</span>
+          Back
+        </Link>
+
+        <div className="relative mt-10">
+          <div className="terminal-shell animate-terminal-in motion-reduce:animate-none">
+            <Terminal name="Terminal" colorMode={ColorMode.Dark} height="auto">
+              <PromptLine text='figlet "About Me" | lolcat' delay={0.1} />
+              <TerminalOutput>
+                <pre
+                  className="text-[clamp(1rem,2.6vw,1.7rem)] leading-tight animate-line-in motion-reduce:animate-none"
+                  style={{ animationDelay: "0.18s" }}
+                >{lolcatLines.map((line, lineIndex) => (
+                  <span key={`lolcat-line-${lineIndex}`}>
+                    {line.map((cell, cellIndex) => (
+                      <span
+                        key={`lolcat-cell-${lineIndex}-${cellIndex}`}
+                        style={{ color: cell.color }}
+                      >
+                        {cell.char}
+                      </span>
+                    ))}
+                    {lineIndex < lolcatLines.length - 1 ? "\n" : ""}
+                  </span>
+                ))}</pre>
+              </TerminalOutput>
+
+              <PromptLine text="whoami" delay={0.3} />
+              <OutputLine text="joshua.nee" delay={0.36} />
+
+              <PromptLine text="whereis Joshua" delay={0.42} />
+              <OutputLine text="Joshua: University/Masters/Carnegie Mellon University" delay={0.48} />
+
+              <PromptLine
+                text='stat -f "Joined at: %Sm %Sd %SY" University/Masters/Carnegie Mellon University'
+                delay={0.54}
+              />
+              <OutputLine text="Joined at: Aug 25 2025" delay={0.6} />
+
+              <PromptLine text="cat /University/Masters/Carnegie Mellon University" delay={0.66} />
+              <TerminalOutput>
+                <pre
+                  className="text-slate-200 leading-relaxed whitespace-pre-wrap break-words animate-line-in motion-reduce:animate-none"
+                  style={{ animationDelay: "0.72s" }}
+                >{academicText}</pre>
+              </TerminalOutput>
+            </Terminal>
+          </div>
+
+          <div className="relative z-10 mx-auto mt-10 w-52 sm:w-64 lg:absolute lg:right-6 lg:top-6 lg:mt-0 lg:w-72 lg:translate-x-0 animate-photo-in motion-reduce:animate-none">
+            <div className="rounded-full border border-white/20 bg-white/5 p-2 shadow-[0_25px_60px_rgba(0,0,0,0.55)]">
+              <Image
+                src="/assets/photo.jpeg"
+                alt="Joshua Nee"
+                width={520}
+                height={520}
+                priority
+                className="h-full w-full rounded-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 };
 

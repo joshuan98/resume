@@ -10,14 +10,12 @@ Joshua Nee's personal portfolio website to showcase experience, projects, and sk
 
 - **Responsive Design:** Adapts to any screen size for optimal user experience.
 - **Modern Stack:** Built with `Next.js`, `TypeScript`, and `Tailwind CSS`.
-- **Animations:** Smooth transitions using `Framer Motion`.
 
 ## 🛠️ **Technologies Used**
 
 - **Next.js** - Framework for server-side rendering and static site generation
 - **TypeScript** - Typed JavaScript for improved maintainability
 - **Tailwind CSS** - Utility-first CSS framework for styling
-- **Framer Motion** - Animation library for React projects
 
 ## 📂 **Project Structure**
 
