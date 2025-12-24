@@ -39,7 +39,7 @@ const HomePage: React.FC = () => {
         animate={{ opacity: contentVisible ? 1 : 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <ProfileSelector />
+        <ProfileSelector reveal={contentVisible} />
       </motion.main>
     </div>
   );
