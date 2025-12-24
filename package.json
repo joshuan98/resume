@@ -15,7 +15,7 @@
     "chroma-js": "^3.1.2",
     "figlet": "^1.9.4",
     "framer-motion": "^11.11.9",
-    "next": "15.3.8",
+    "next": "^15.5.9",
     "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
@@ -29,7 +29,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.14",
+    "eslint-config-next": "^16.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
