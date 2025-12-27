@@ -1,9 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import { Bebas_Neue } from "next/font/google";
-import React from "react";
 import { PROFILES } from "@/constants/profiles";
+import { motion } from "framer-motion";
+import { Bebas_Neue } from "next/font/google";
+import Link from "next/link";
+import React from "react";
 
 const wordmark = Bebas_Neue({
   weight: "400",
@@ -40,13 +41,16 @@ const ProfileNav: React.FC<ProfileNavProps> = ({ activeLabel }) => {
               <Link
                 key={profile.href}
                 href={profile.href}
-                className={`relative inline-block transition hover:text-white ${
-                  isActive ? "text-white" : ""
-                }`}
+                className={`relative inline-block transition hover:text-white ${isActive ? "text-white" : ""
+                  }`}
               >
                 {profile.name}
                 {isActive && (
-                  <span className="absolute left-0 right-0 -bottom-2 h-[2px] bg-red-500" />
+                  <motion.span
+                    layoutId="activeProfileUnderline"
+                    className="absolute left-0 right-0 -bottom-2 h-[2px] bg-red-500"
+                    transition={{ type: "spring", stiffness: 500, damping: 40 }}
+                  />
                 )}
               </Link>
             );
