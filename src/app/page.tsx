@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#141414] text-white">
+    <div className="relative min-h-screen text-white">
       <AnimatePresence>{showOverlay && <IntroOverlay />}</AnimatePresence>
 
       <motion.main

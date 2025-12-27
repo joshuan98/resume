@@ -108,7 +108,7 @@ const TerminalPage = () => {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(34,197,94,0.14),transparent_60%),radial-gradient(circle_at_15%_75%,rgba(250,204,21,0.12),transparent_55%),#050505] text-slate-100">
+    <main className="min-h-screen text-slate-100">
       <div className="mx-auto w-full max-w-6xl px-6 pb-20 pt-10">
         <Link
           href="/stalker"

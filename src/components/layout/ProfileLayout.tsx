@@ -1,12 +1,12 @@
 "use client";
 
+import { useDialog, useScrollState, useSkillBars } from "@/hooks/useProfileLayout";
+import type { ContentRowItem, ContentRow as ContentRowType, ProfileHero } from "@/types";
 import React, { useEffect } from "react";
-import ProfileNav from "./ProfileNav";
-import HeroSection from "../profile/HeroSection";
 import ContentRow from "../profile/ContentRow";
+import HeroSection from "../profile/HeroSection";
 import ItemDialog from "../profile/ItemDialog";
-import { useScrollState, useDialog, useSkillBars } from "@/hooks/useProfileLayout";
-import type { ContentRow as ContentRowType, ContentRowItem, ProfileHero } from "@/types";
+import ProfileNav from "./ProfileNav";
 
 type ActiveItem = {
   rowTitle: string;
@@ -47,7 +47,7 @@ const ProfileLayout: React.FC<ProfileLayoutProps> = ({
   }, [rows, updateRowState]);
 
   return (
-    <div className="min-h-screen bg-[#141414] text-white">
+    <div className="min-h-screen text-white">
       <ProfileNav activeLabel={navLabel ?? heading} />
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 pb-16 pt-24">
         {heading || subheading ? (

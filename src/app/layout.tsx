@@ -1,3 +1,4 @@
+import AnimatedBackground from '@/components/layout/AnimatedBackground';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata, Viewport } from "next";
@@ -80,7 +81,10 @@ export default function RootLayout({
       <body
         className={`${ubuntu_mono.className} antialiased bg-[#141414] text-neutral-100`}
       >
-        {children}
+        <AnimatedBackground />
+        <div className="relative z-10">
+          {children}
+        </div>
         <Analytics />
         <SpeedInsights />
       </body>
