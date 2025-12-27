@@ -1,13 +1,6 @@
-export type ProfileConfig = {
-  id: string;
-  name: string;
-  accent: string;
-  symbol: string;
-  href: string;
-  tagline: string;
-};
+import type { ProfileConfig } from "@/types";
 
-export const PROFILES: ProfileConfig[] = [
+export const PROFILES: readonly ProfileConfig[] = [
   {
     id: "recruiter",
     name: "Recruiter",
@@ -32,9 +25,4 @@ export const PROFILES: ProfileConfig[] = [
     href: "/stalker",
     tagline: "Personal backstory, socials & curiosities",
   },
-];
-
-export const PROFILE_MAP = PROFILES.reduce((acc, profile) => {
-  acc[profile.id] = profile;
-  return acc;
-}, {} as Record<string, ProfileConfig>);
+] as const;
